@@ -28,7 +28,7 @@
 - Javascript
 - Tableau
 - Matplotlib
-- RandomForest Regression
+- RandomForest Regressor
 - Pandas
 - Sklearn
 - Postgresql
