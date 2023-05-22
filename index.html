@@ -1,0 +1,265 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Final Project</title>
+
+        <!-- Montserrat Font -->
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+
+        <!-- Material Icons -->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="css/styles.css"
+    </head>
+
+    <body>
+        <div class="grid-container">
+
+            <!-- Header -->
+            <header class="header">
+                <h1>Data Science Salaries and Laid Off</h1>
+            </header>    
+            <!-- End -->
+
+            <!-- Main -->
+            <main class="main-container">
+                <!-- Salary -->
+                <div class="salary-title">
+                    <p class="font-weight-bold"><center>Salary</center></p>
+                </div>
+
+                <div class="salary-charts">
+                    <div class="salary-charts-card">
+                        <div class="chartBox">
+                            <p class="salary-chart-title">Average Salary by Title in USD</p>
+                            <canvas id="myChart"></canvas>                    
+    
+                            <select id="title" onchange="changeTitle()">
+                                <option value="Business Analyst">Business Analyst</option>
+                                <option value="Data Scientist">Data Scientist</option>
+                                <option value="Hardware Engineer">Hardware Engineer</option>
+                                <option value="Human Resources">Human Resources</option>
+                                <option value="Management Consultant">Management Consultant</option>
+                                <option value="Marketing">Marketing</option>
+                                <option value="Mechanical Engineer">Mechanical Engineer</option>
+                                <option value="Product Designer">Product Designer</option>
+                                <option value="Product Manager">Product Manager</option>
+                                <option value="Recruiter">Recruiter</option>
+                                <option value="Sales">Sales</option>
+                                <option value="Software Engineer">Software Engineer</option>
+                                <option value="Software Engineering Manager">Software Engineering Manager</option>
+                                <option value="Solution Architect">Solution Architect</option>
+                                <option value="Technical Program Manager">Technical Program Manager</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="salary-map">
+                    <div class='tableauPlaceholder' id='viz1684709187276' style='position: relative'><noscript><a href='#'><img alt='Salary ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;da&#47;datascience_salary&#47;Salary&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='datascience_salary&#47;Salary' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;da&#47;datascience_salary&#47;Salary&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1684709187276');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='100%';vizElement.style.maxWidth='1250px';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';vizElement.style.maxHeight='887px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='100%';vizElement.style.maxWidth='1250px';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';vizElement.style.maxHeight='887px';} else { vizElement.style.width='100%';vizElement.style.height='727px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+                </div>
+
+                <!-- Layoff -->
+                <div class="layoff-title">
+                    <p class="font-weight-bold"><center>Layoff</center></p>
+                </div>
+
+                <div class="main-cards">
+
+                    <div class="card">
+                        <div class="card-inner">
+                            <p class="text-primary">Total Lay Off in 2020</p>
+                            <span class="material-icons-outlined text-blue">waving_hand</span>
+                        </div>
+                        <span class="text-primary font-weight-bold">80998</span>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-inner">
+                            <p class="text-primary">Total Lay Off in 2021</p>
+                            <span class="material-icons-outlined text-orange">follow_the_signs</span>
+                        </div>
+                        <span class="text-primary font-weight-bold">15823</span>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-inner">
+                            <p class="text-primary">Total Lay Off in 2022</p>
+                            <span class="material-icons-outlined text-green">person_off</span>
+                        </div>
+                        <span class="text-primary font-weight-bold">164511</span>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-inner">
+                            <p class="text-primary">Total Lay Off in 2023</p>
+                            <span class="material-icons-outlined text-red">sentiment_dissatisfied</span>
+                        </div>
+                        <span class="text-primary font-weight-bold">185136</span>
+                    </div>
+                </div>
+
+                <div class="layoff-map">
+                    <div class='tableauPlaceholder' id='viz1684709249320' style='position: relative'><noscript><a href='#'><img alt='Layoff ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;da&#47;datascience_salary_layoff&#47;Layoff&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='datascience_salary_layoff&#47;Layoff' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;da&#47;datascience_salary_layoff&#47;Layoff&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1684709249320');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='100%';vizElement.style.maxWidth='1250px';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';vizElement.style.maxHeight='887px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='100%';vizElement.style.maxWidth='1250px';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';vizElement.style.maxHeight='887px';} else { vizElement.style.width='100%';vizElement.style.height='727px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+                </div>
+
+                <div class="charts">
+                    <div class="charts-card">
+                        <div class="chartBox">
+                            <p class="chart-title">Layoffs by Industry</p>
+                            <div id="industryChart"></div>                      
+                        </div>
+                    </div>
+                </div>
+
+                <div class="charts2">
+                    <div class="charts-card2">
+                        <p class="chart-title2">Layoff Trends by Quarter</p>
+                        <div id="area-chart"></div>
+                    </div>
+                </div>
+            </main>
+            <!-- End Main-->
+
+            <!---------------- Model ----------------->
+            <!-- Model Home -->
+            <section class="model" id="model">
+                <div class="model-content">
+                    <h3>Our Model</h3>
+                    <h1>Predicted Value:</h1>
+                    <p>Total Yearly Compensation</p>
+                </div>
+
+                <div class="img">
+                    <img src="https://mljar.com/images/machine-learning/random_forest_logo.png" alt="">
+                </div>
+            </section>
+
+            <!-- Features Display -->
+            <section class="model-display" id="features">
+                <h2 class="heading"><center>Features</center></h2>
+
+                <div class="display-container">
+                    <div class="display-box">
+                        <h3>Company</h3>
+                        <span class="material-icons-outlined text-blue">apartment</span>    
+                    </div>
+
+                    <div class="display-box">
+                        <h3>Year</h3>
+                        <span class="material-icons-outlined text-blue">calendar_month</span> 
+                    </div>
+
+                    <div class="display-box">
+                        <h3>Title</h3>
+                        <span class="material-icons-outlined text-blue">badge</span>    
+                    </div>
+
+                    <div class="display-box">
+                        <h3>Gender</h3>
+                        <span class="material-icons-outlined text-blue">wc</span>    
+                    </div>
+
+                    <div class="display-box">
+                        <h3>Level</h3>
+                        <span class="material-icons-outlined text-blue">stairs</span>    
+                    </div>
+
+                    <div class="display-box">
+                        <h3>Year of Experience</h3>
+                        <span class="material-icons-outlined text-blue">work_history</span>    
+                    </div>
+
+                    <div class="display-box">
+                        <h3>Year At Company</h3>
+                        <span class="material-icons-outlined text-blue">safety_check</span>    
+                    </div>
+
+                    <div class="display-box">
+                        <h3>Latitude</h3>
+                        <span class="material-icons-outlined text-blue">location_on</span>    
+                    </div>
+
+                    <div class="display-box">
+                        <h3>Longitude</h3>
+                        <span class="material-icons-outlined text-blue">location_on</span>    
+                    </div>
+
+                    <div class="display-box">
+                        <h3>Month</h3>
+                        <span class="material-icons-outlined text-blue">event</span>    
+                    </div>
+
+                    <div class="display-box">
+                        <h3>Bonus</h3>
+                        <span class="material-icons-outlined text-blue">payments</span>    
+                    </div>
+
+                    <div class="display-box">
+                        <h3>Stock Grant Value</h3>
+                        <span class="material-icons-outlined text-blue">auto_graph</span>    
+                    </div>
+            </section>
+
+            <!-- Result -->
+            <section class="model-result" id="result">
+                <h2 class="heading"><center>Our Result</center></h2>
+
+                <div class="result-container">
+                    <div class="result-box">
+                        <span class="material-icons-outlined text-green">verified</span> 
+                        <h3>Accuracy</h3>
+                        <h1>86%</h1>   
+                    </div>
+                </div>
+
+                <div class="result-chart">
+                    <div class="result-chart-card">
+                        <p class="result-chart-title">Predictions VS. y test</p>
+                        <div id="scatter-chart"></div>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Test -->
+            <section class="test" id="test">
+                <h2 class="heading"><center>Test</center></h2>
+
+                <div class="test-container">
+                    <div class="test-box">
+                        <h3>Feature</h3>
+                        <span class="material-icons-outlined text-blue">man</span> Male
+                        <span class="material-icons-outlined text-blue">apartment</span> Amazon
+                        <span class="material-icons-outlined text-blue">calendar_month</span> 2018
+                        <span class="material-icons-outlined text-blue">event</span> March
+                        <span class="material-icons-outlined text-blue">badge</span> Sofeware Engineer
+                        <span class="material-icons-outlined text-blue">stairs</span> Level 4
+                        <span class="material-icons-outlined text-blue">location_on</span> Seattle
+                    </div>
+
+                    <div class="test-box">
+                        <h3>Prediction:</h3>
+                        <span class="material-icons-outlined text-blue">attach_money</span> 219676  
+                    </div>
+                </div>
+
+            </section>
+            
+            <!-- Model End -->
+        </div>
+
+        <!-- Script -->
+        <script src="https://rawgit/com/moment/moment/2.2.1/min/moment.min.js"></script>
+        <!-- Chart.js -->
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.0.0"></script>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/chart.js/dist/chart.umd.min.js"></script>
+        <!-- ApexCharts -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/apexcharts/3.40.0/apexcharts.min.js"></script>
+        <!-- Custom JS -->
+        <script src="js/scripts.js"></script>
+    </body>
+</html>
