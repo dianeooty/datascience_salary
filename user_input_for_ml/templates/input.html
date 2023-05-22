@@ -5,43 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Total Energy Consumption by Year</title>
 
-<form method="POST", action="{{url_for('input')}}">
-
-
-  <label for="cars">Choose a car:</label>
-
+<form method="POST" action="/result">
 
   <!--https://www.w3schools.com/tags/tag_select.asp -->
 
 <!---->
 <!-- https://www.w3schools.com/html/html_forms.asp to create form-->
-
-  <select name="cars" id="cars" name="cars">
-  
-    <option value="volvo">Volvo</option>
-    <option value="saab">Saab</option>
-    <option value="mercedes">Mercedes</option>
-    <option value="audi">Audi</option>
-  </select>
-
-  <br>
   <!--https://stackoverflow.com/questions/19011861/is-there-a-float-input-type-in-html5-->
 
   <label for="year_salary">Year of salary:</label>
   <input type="number", name="year_salary", step="1">
   <br>
-  <label for="year_experience">Year of sexpenience:</label>
+  <label for="year_experience">Year of expenience:</label>
   <input type="number", name="year_experience", step=".01">
   <br>
   <label for="year_experience_company">Year of experience at company:</label>
   <input type="number", name="year_experience_company", step=".01">
   <br>
   <label for="latitude">latitude:</label>
-  <input type="number", name="latitude">
+  <input type="number", name="latitude", step="any">
   <br>
   <br>
   <label for="longitude">longitude:</label>
-  <input type="number", name="longitude">
+  <input type="number", name="longitude", step="any">
   <br>
   <label for="month">month:</label>
   <input type="number", name="month", step="1">
@@ -59,12 +45,33 @@
     <option value="Capital One">Capital One</option>
   </select>
   <br>
-
-  <!-- https://www.w3schools.com/tags/att_input_type_number.asp-->
-  <label for="quantity">Quantity (between 1 and 5):</label>
-  <input type="number" id="quantity" name="quantity" step="any" min="1" max="5">
+  <select name="job_title" id="job_title" name="job_title">
+    <option value="Business Analyst">Business Analyst</option>
+    <option value="Data Scientist">Data Scientist</option>
+    <option value="Hardware Engineer">Hardware Engineer</option>
+    <option value="Human Resources">Human Resources</option>
+  </select>
+  <br>
+  <select name="gender" id="gender" name="gender">
+    <option value="Female">Female</option>
+    <option value="Male">Male</option>
+    <option value="Other">Other</option>
+  </select>
+  <br>
+  <select name="job_level" id="job_level" name="job_level">
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="L3">L3</option>
+    <option value="Other">Other</option>
+  </select>
   <br>
   <input type="submit" value="Predict">
+  <br>
+  {% if input_list%}
+  <h3>Prediction:{{input_list}}</h3>
+  {% endif %}
+  <!-- https://www.w3schools.com/tags/att_input_type_number.asp-->
+
 
 
 </form>  
