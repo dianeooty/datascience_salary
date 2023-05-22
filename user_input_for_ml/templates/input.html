@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Total Energy Consumption by Year</title>
+
+<form method="POST", action="{{url_for('input')}}">
+
+
+  <label for="cars">Choose a car:</label>
+
+
+  <!--https://www.w3schools.com/tags/tag_select.asp -->
+
+<!---->
+<!-- https://www.w3schools.com/html/html_forms.asp to create form-->
+
+  <select name="cars" id="cars" name="cars">
+  
+    <option value="volvo">Volvo</option>
+    <option value="saab">Saab</option>
+    <option value="mercedes">Mercedes</option>
+    <option value="audi">Audi</option>
+  </select>
+
+  <br>
+  <!--https://stackoverflow.com/questions/19011861/is-there-a-float-input-type-in-html5-->
+
+  <label for="year_salary">Year of salary:</label>
+  <input type="number", name="year_salary", step="1">
+  <br>
+  <label for="year_experience">Year of sexpenience:</label>
+  <input type="number", name="year_experience", step=".01">
+  <br>
+  <label for="year_experience_company">Year of experience at company:</label>
+  <input type="number", name="year_experience_company", step=".01">
+  <br>
+  <label for="latitude">latitude:</label>
+  <input type="number", name="latitude">
+  <br>
+  <br>
+  <label for="longitude">longitude:</label>
+  <input type="number", name="longitude">
+  <br>
+  <label for="month">month:</label>
+  <input type="number", name="month", step="1">
+  <br>
+  <label for="bonus">bonus:</label>
+  <input type="number", name="bonus", step="1"> 
+  <br>
+  <label for="stock">stock:</label>
+  <input type="number", name="stock", step="1"> 
+  <br>
+  <select name="company" id="company" name="company">
+    <option value="Amazon">Amazon</option>
+    <option value="Apple">Apple</option>
+    <option value="Bloomberg">Bloomberg</option>
+    <option value="Capital One">Capital One</option>
+  </select>
+  <br>
+
+  <!-- https://www.w3schools.com/tags/att_input_type_number.asp-->
+  <label for="quantity">Quantity (between 1 and 5):</label>
+  <input type="number" id="quantity" name="quantity" step="any" min="1" max="5">
+  <br>
+  <input type="submit" value="Predict">
+
+
+</form>  
