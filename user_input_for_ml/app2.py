@@ -19,7 +19,7 @@ from sklearn.ensemble import GradientBoostingRegressor
 from joblib import dump, load
 
 #Im not sure if this should be with the open clause, I added that based on youtube video code
-rf_model=load('salary_ml_model.joblib')
+#rf_model=load('salary_ml_model.joblib')
 
 
 
@@ -370,12 +370,28 @@ def resutls():
             blank_dummies_df['level_Other'] = 1                         
         else: 
             print("Level not found")
-    input_list=[input_year, input_year_experience, input_year_at_company, input_latitude, input_longitude, input_month, input_bonus, input_stock, input_company, input_title, input_gender, input_level]
+    #input_list=[input_year, input_year_experience, input_year_at_company, input_latitude, input_longitude, input_month, input_bonus, input_stock, input_company, input_title, input_gender, input_level]
     #input_list=output["input_list"]
     #reduced_df_input_example = [ 'Amazon', 2018, 'Sofeware Engineer',  'Male', 'L4',
      #  0, 0, 47.603832, -122.330062, 3, 0, 0]
 
-    return render_template('input.html', input_list=input_list ) 
+    # Create a StandardScaler instances
+    scaler = StandardScaler()
+
+    # Fit the StandardScaler
+    X_input_scaler = scaler.fit(blank_dummies_df)
+
+    # Scale the data
+    X_input_test_scaled = X_input_scaler.transform(blank_dummies_df)
+
+    rf_model=load('salary_ml_model.joblib') 
+
+    prediction_output = rf_model.predict(X_input_test_scaled)
+    prediction_output=prediction_output[0]
+
+
+
+    return render_template('input.html',  prediction_output= prediction_output) 
 
 if __name__ == '__main__':
     app.run(debug=True)
