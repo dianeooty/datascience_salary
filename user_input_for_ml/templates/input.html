@@ -3,15 +3,144 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Total Energy Consumption by Year</title>
+    <title>Salary and Layoff Analyst</title>
 
-<form method="POST" action="/result">
+<script src="js/scripts.js"></script>
+<form name="salary_model" id="salary_model" method="POST" action="/result">
 
   <!--https://www.w3schools.com/tags/tag_select.asp -->
 
 <!---->
 <!-- https://www.w3schools.com/html/html_forms.asp to create form-->
   <!--https://stackoverflow.com/questions/19011861/is-there-a-float-input-type-in-html5-->
+  <!-- <script> -->
+//   var companyobject = {
+//   "AMAZON": [ '4', 'L6', 'L1', '5','L5'],
+//   "Apple":['M1', 'L4', 'Ict3', 'ICT2', 'ICT3', 'ICT5' ,'ICT - 5', 'ICT4', '4',
+//     'New Grad (ICT2)', 'ICT 3', 'ICT 2' ,'ICT-4', 'M2' ,'Ic3' ,'IC2','Ict4','T3', 
+//     'L3', 'Engineer', 'L2', '4`', 'EM2', 'E4', 'L5', '3', 'ic4', 'M3', 'IC5', 'M',
+//     'Senior', 'IC3', 'MGR1', 'ict4', 'IC4', 'ITC3', 'ict3', 'IC3 PM', 'Director 1',
+//     'Entry', 'Technical Director', 'ICT6', 'Ict5', '5', 'MGT1',
+//     'Engineering Manager', 'SW Dev Eng Mgr 2', 'ITC4', 'L1', 'ICT 4', 'e3', 'ict5'
+// ,    'LC2', 'Co-Op', 'ISE, SIML', 'IST1',  'l4', '1', 'Specialist',
+//     'Software Integrity Eng 4', 'Manager 2', 'ic5', 'Intern', 'IC6',
+//     'Senior Software Engineer', 'Individual Contributor 3', 'M4',
+//     'Software Engineer', 'Ict 4', 'm2', 'ECDP', 'Principal', 'Support 3', 'ICT 5'],
+//     "Bloomberg": ['Senior Software Engineer', 'Software Engineer', 'Manager', 'Senior', '0',
+//     'Team lead', 'Senior Manager', 'Team Leader', 'Team Lead', 'Consultant',
+//     'Team leader', 'Head Media Engineering', 'Product Manager',
+//     'Senior Software Developer', 'Junior', 'New Grad', 'Engineering Manager',
+//     'engineering manager', 'Engineering manager', 'TL', 'FSD',
+//     'Director', 'DA2', 'L3', '1', 'Recruiter', 'L2', 'L4', 'Bloom', 'L3 New Grad',
+//     'Senior engineering manager', 'Senior Team Lead',
+//     'Senior product manager', 'senor', 'L1', 'Mid-level', 
+//     'None', 'Senior Product Manager', 'l1', 'SSE', 'Entry Level', 'L5', 'entry',
+//     'Technical Program Manager', 'Product manager', 'New Graduate', 'Marketing',
+//     'Level'],
+//     "JavaScript": ["Variables", "Operators", "Functions", "Conditions"]
+//   }
+//   //"Back-end": {
+//   //  "PHP": ["Variables", "Strings", /"Arrays"],
+//   //  "SQL": ["SELECT", "UPDATE", "DELETE"]
+// //  }
+// //}
+// window.onload = function() {
+//   var companySel = document.getElementById("company");
+//   var job_levelSel = document.getElementById("job_level");
+//   //var chapterSel = document.getElementById("chapter");
+//   for (var x in companyobject) {
+//     companySel.options[companySel.options.length] = new Option(x, x);
+//   }
+//   companySel.onchange = function() {
+//     //empty Chapters- and Topics- dropdowns
+//     chapterSel.length = 1;
+//     job_levelSel.length = 1;
+//     //display correct values
+//     for (var y in companyobject[this.value]) {
+//       job_levelSel.options[job_levelSel.options.length] = new Option(y, y);
+//     }
+//   }
+//   job_levelSel.onchange = function() {
+//     //empty Chapters dropdown
+//     chapterSel.length = 1;
+//     //display correct values
+//     var z = companyobject[subjectSel.value][this.value];
+//     for (var i = 0; i < z.length; i++) {
+//       chapterSel.options[chapterSel.options.length] = new Option(z[i], z[i]);
+//     }
+//   }
+// }
+
+  
+<!-- //   </script> -->
+
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script>
+var subjectObject = {
+  "Amazon": {
+    "L1": [],
+    "L2": [],
+    "L3": []    
+  },
+  "Apple": {
+    "A1": ["Variables", "Strings", "Arrays"],
+    "SQA2L": ["SELECT", "UPDATE", "DELETE"]
+  }
+}
+window.onload = function() {
+  var subjectSel = document.getElementById("subject");
+  var topicSel = document.getElementById("topic");
+  var chapterSel = document.getElementById("chapter");
+  for (var x in subjectObject) {
+    subjectSel.options[subjectSel.options.length] = new Option(x, x);
+  }
+  subjectSel.onchange = function() {
+    //empty Chapters- and Topics- dropdowns
+//     chapterSel.length = 1;
+    topicSel.length = 1;
+    //display correct values
+    for (var y in subjectObject[this.value]) {
+      topicSel.options[topicSel.options.length] = new Option(y, y);
+      chapterSel.options[chapterSel.options.length] = new Option(y, y);
+      
+    }
+  }
+//   topicSel.onchange = function() {
+//     //empty Chapters dropdown
+//     chapterSel.length = 1;
+//     //display correct values
+//     var z = subjectObject[subjectSel.value][this.value];
+//     for (var i = 0; i < z.length; i++) {
+//       chapterSel.options[chapterSel.options.length] = new Option(z[i], z[i]);
+//     }
+//   }
+}
+</script>
+</head>   
+<body>
+
+<h1>Cascading Dropdown Example</h1>
+
+<form name="form1" id="form1" action="/action_page.php">
+Subjects: <select name="subject" id="subject">
+    <option value="" selected="selected">Select subject</option>
+  </select>
+  <br><br>
+Topics: <select name="topic" id="topic">
+    <option value="" selected="selected">Please select subject first</option>
+  </select>
+  <br><br>
+Chapters: <select name="chapter" id="chapter">
+    <option value="" selected="selected">Please select topic first</option>
+  </select>
+  <br><br>
+  <input type="submit" value="Submit">  
+</form>
+
+</body>
+</html>
 
   <label for="year_salary">Year of salary:</label>
   <input type="number", name="year_salary", step="1">
@@ -38,40 +167,37 @@
   <label for="stock">stock:</label>
   <input type="number", name="stock", step="1"> 
   <br>
-  <select name="company" id="company" name="company">
-    <option value="Amazon">Amazon</option>
-    <option value="Apple">Apple</option>
-    <option value="Bloomberg">Bloomberg</option>
-    <option value="Capital One">Capital One</option>
+  Company<select name="company" id="company">
+    <option value="" selected="selected">Select company</option>
   </select>
+ 
   <br>
-  <select name="job_title" id="job_title" name="job_title">
+  <select name="job_title" id="job_title">
     <option value="Business Analyst">Business Analyst</option>
     <option value="Data Scientist">Data Scientist</option>
     <option value="Hardware Engineer">Hardware Engineer</option>
     <option value="Human Resources">Human Resources</option>
   </select>
   <br>
-  <select name="gender" id="gender" name="gender">
+  <select name="gender" id="gender" >
     <option value="Female">Female</option>
     <option value="Male">Male</option>
     <option value="Other">Other</option>
   </select>
   <br>
-  <select name="job_level" id="job_level" name="job_level">
-    <option value="1">1</option>
-    <option value="2">2</option>
-    <option value="L3">L3</option>
-    <option value="Other">Other</option>
+  Job_Level<select name="job_level" id="job_level">
+    <option value="" selected="selected">Please select company first</option>
+
   </select>
   <br>
   <input type="submit" value="Predict">
   <br>
-  {% if input_list%}
-  <h3>Prediction:{{input_list}}</h3>
+  {% if prediction_output%}
+  <h3>Prediction:{{ prediction_output}}</h3>
   {% endif %}
   <!-- https://www.w3schools.com/tags/att_input_type_number.asp-->
 
 
 
 </form>  
+
