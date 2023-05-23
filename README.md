@@ -33,6 +33,7 @@
 - Sklearn
 - Postgresql
 - MongoDB
+- Seaborn
 
 
 
