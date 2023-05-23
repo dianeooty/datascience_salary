@@ -36,7 +36,6 @@ body {
     font-weight: 600;
 }
 
-
 /* ------------------- Header ------------------- */
 .header {
     grid-area: header;
@@ -53,54 +52,7 @@ body {
     display: none;
 }
 
-/* ------------------- Sidebar ------------------- */
-#sidebar {
-    grid-area: sidebar;
-    height: 100%;
-    background-color: #21232d;
-    color: #9799ab;
-    overflow-y: auto;
-    transition: all 0.5s;
-    -webkit-transition: all 0.5s;
-}
 
-.sidebar-title {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 20px 20px 20px;
-    margin-bottom: 30px;
-}
-
-.sidebar-title > span {
-    display: none;
-}
-
-.sidebar-brand {
-    margin-top: 15px;
-    font-size: 20px;
-    font-weight: 700;
-}
-
-.sidebar-list {
-    padding: 0;
-    margin-top: 15px;
-    list-style-type: none;
-}
-
-.sidebar-list-item {
-    padding: 20px 20px 20px 20px;
-}
-
-.sidebar-list-item:hover {
-    background-color: rgba(255, 255, 255, 0.2);
-    cursor: pointer;
-}
-
-.sidebar-responsive {
-    display: inline !important;
-    position: absolute;
-}
 
 /* ------------------- Main ------------------- */
 .main-container {
@@ -142,13 +94,6 @@ body {
     justify-content: center;
     font-size: 22px;
     font-weight: 600;
-}
-
-
-.salary-map {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 50px;
 }
 
 /*---Lay off---*/
@@ -434,6 +379,136 @@ section {
     font-size: 1.3rem;
 }
 
+/* ---- Model with layoff -----*/
+.model-layoff{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section {
+    min-height: fixed;
+    padding: 10rem 9% 2rem;
+}
+
+.model-layoff-img {
+    width: 35vw;
+}
+
+.model-layoff-content h3 {
+    font-size: 4rem;
+    font-weight: 700;
+}
+
+.model-layoff-content h1 {
+    font-size: 3.2rem;
+    font-weight: 500;
+}
+
+.model-layoff-content p {
+    font-size: 3.2rem;
+    font-weight: 500;
+}
+
+/*--Features--*/
+.model-layoff-display h2 {
+    font-size: 5.6rem;
+    margin-bottom: 5rem;
+}
+
+.layoff-display-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+    margin: 20px 0;
+}
+
+.layoff-display-container .display-box {
+    flex: 1 1 30rem;
+    background: #ffffff;
+    padding: 1rem 1rem 2rem;
+    border-radius: 2rem;
+    text-align: center;
+    border: .2rem solid #f5b74f;
+    transition: .5s ease;
+}
+
+.layoff-display-container .display-box:hover {
+    border-color: #f5b74f;
+    transform: scale(1.10);
+}
+
+.layoff-display-box span {
+    font-size: 2.5rem;
+}
+
+.layoff-display-box h3 {
+    font-size: 1.3rem;
+}
+
+/*--Result--*/
+.layoff-model-result h2 {
+    font-size: 5.6rem;
+    margin-bottom: 1rem;
+}
+
+.layoff-result-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    margin: 20px 0;
+}
+
+.layoff-result-container .result-box {
+    flex: 1 1 30rem;
+    background: #ffffff;
+    padding: 1rem 1rem 2rem;
+    border-radius: 2rem;
+    text-align: center;
+    border: .2rem solid #367952;
+    transition: .5s ease;
+}
+
+.layoff-result-container .result-box:hover {
+    border-color: #367952;
+    transform: scale(1.10);
+}
+
+.result-box span {
+    font-size: 2.5rem;
+}
+
+.result-box h3 {
+    font-size: 1.3rem;
+}
+
+.layoff-chart {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-bottom: 50px;
+}
+
+.layoff-chart-card {
+    background-color: #ffffff;
+    margin-bottom: 20px;
+    padding: 25px;
+    box-sizing: border-box;
+    -webkit-column-break-inside: avoid;
+    border: 1px solid #d2d2d3;
+    border-radius: 5px;
+    box-shadow: 0 6px 7px -4px rgba(0, 0, 0, 0.2);
+}
+
+.layoff-chart-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+/* -------Prediction ----------*/
+/* ---Put you code here----*/
 
 /* ------------------- Media Queries ------------------- */
 
@@ -448,15 +523,7 @@ section {
             "main";
     }
 
-    #sidebar {
-        display: none;
-    }
-
     .menu-icon {
-        display: inline;
-    }
-
-    .sidebar-title > span {
         display: inline;
     }
 }

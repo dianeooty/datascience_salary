@@ -68,6 +68,62 @@ var barChartOptions = {
 var barChart = new ApexCharts(document.querySelector("#industryChart"), barChartOptions);
 barChart.render();
 
+// Bar chart for top 20 highest pay companies
+var barChartOptions2 = {
+  series: [{
+      name: "Salary",
+      data: [500000.0, 493000.0, 481376.8656716418, 414333.3333333333, 411166.6666666667, 404562.5, 395915.25423728814, 390625.0, 387952.38095238095, 372000.0, 369913.04347826086, 366297.2972972973, 365300.5780346821, 365291.41104294476, 364800.0, 364481.7518248175, 364284.4827586207, 360931.0344827586, 354875.0, 354050.0]
+  }],
+  chart: {
+      type: 'bar',
+      height: 350,
+      toolbar: {
+          show: false
+      },
+  },
+  colors: [
+      "#f5b74f",
+  ],
+  plotOptions: {
+      bar: {
+          distributed: true,
+          borderRadius: 1,
+          horizontal: false,
+          columnWidth: '40%',
+      }
+  },
+  dataLabels: {
+      enabled: false
+  },
+  legend: {
+      show: false
+  },
+  xaxis: {
+      categories: ['PDT Partners', 'CloudKitchens', 'Netflix', 'Snapchat', 'Snap',
+      'Jane Street Capital', 'Roblox', 'Ripple', 'Brex', 'Chime', 'UiPath',
+      'Slack', 'Stripe', 'Lyft', 'Upwork', 'Pinterest', 'Airbnb', 'Coupang',
+      'Zapier', 'Snowflake'],
+  },
+  yaxis: {
+      title: {
+          text: "Average Annual Compensation"
+      },
+      labels: {
+        formatter: function(value) {
+          var val = Math.abs(value)
+          if (val >= 1000) {
+            val = (val / 1000).toFixed(0) + ' K'
+          }
+          return val
+        }
+      }
+  }
+
+};
+
+var barChart2 = new ApexCharts(document.querySelector("#myChart2"), barChartOptions2);
+barChart2.render();
+
 // Area Chart
 var areaChartOptions = {
     series: [{
@@ -158,6 +214,52 @@ var scatterChart = new ApexCharts(document.querySelector("#scatter-chart"), scat
 scatterChart.render();
 
 
+// Bar Chart for accuracy in layoff model
+
+var barChartOptions3 = {
+  series: [{
+      name: "Accuracy",
+      data: [0.74, 0.86, 0.89]
+  }],
+  chart: {
+      type: 'bar',
+      height: 350,
+      toolbar: {
+          show: false
+      },
+  },
+  colors: [
+      "#246dec",
+      "#cc3c43",
+      "#367952"
+  ],
+  plotOptions: {
+      bar: {
+          distributed: true,
+          borderRadius: 4,
+          horizontal: false,
+          columnWidth: '40%',
+      }
+  },
+  dataLabels: {
+      enabled: false
+  },
+  legend: {
+      show: false
+  },
+  xaxis: {
+      categories: ["with bonus", "with stock", "with both"],
+  },
+  yaxis: {
+      title: {
+          text: "Accuracy"
+      }
+  }
+};
+
+var barChart3 = new ApexCharts(document.querySelector("#layoff-chart"), barChartOptions3);
+barChart3.render();
+
 // Bar Chart for dropdown selection with title
 // setup 
 const data_bar = {
@@ -165,66 +267,66 @@ const data_bar = {
     datasets: [{
       data: [
         {'id': '2018',
-        'metadata': {'Business Analyst': 149000.0,
-         'Data Scientist': 226503.87596899224,
-         'Hardware Engineer': 238000.0,
-         'Human Resources': 170000.0,
-         'Marketing': 100000.0,
-         'Product Designer': 210266.66666666666,
-         'Product Manager': 276988.31775700935,
-         'Recruiter': 170000.0,
-         'Sales': 566500.0,
-         'Software Engineer': 231179.47594323294,
-         'Software Engineering Manager': 374254.23728813557,
-         'Solution Architect': 244271.18644067796,
-         'Technical Program Manager': 261500.0}},
-       {'id': '2019',
-        'metadata': {'Business Analyst': 116714.28571428571,
-         'Data Scientist': 211633.64055299538,
-         'Hardware Engineer': 221420.92457420923,
-         'Human Resources': 200857.14285714287,
-         'Marketing': 271428.5714285714,
-         'Mechanical Engineer': 113875.0,
-         'Product Designer': 213052.4193548387,
-         'Product Manager': 263759.62815405044,
-         'Recruiter': 179000.0,
-         'Sales': 312555.55555555556,
-         'Software Engineer': 219398.03498682004,
-         'Software Engineering Manager': 372315.4269972452,
-         'Solution Architect': 221489.08296943232,
-         'Technical Program Manager': 180000.0}},
-       {'id': '2020',
-        'metadata': {'Business Analyst': 124845.10250569475,
-         'Data Scientist': 202522.35772357724,
-         'Hardware Engineer': 219348.83720930232,
-         'Human Resources': 179453.125,
-         'Management Consultant': 158977.64227642276,
-         'Marketing': 200464.78873239437,
-         'Mechanical Engineer': 155619.77186311787,
-         'Product Designer': 208917.46031746033,
-         'Product Manager': 249851.02834908283,
-         'Recruiter': 152938.46153846153,
-         'Sales': 208838.6075949367,
-         'Software Engineer': 204269.1946308725,
-         'Software Engineering Manager': 351456.12708018156,
-         'Solution Architect': 212060.53811659192,
-         'Technical Program Manager': 239265.98837209304}},
-       {'id': '2021',
-        'metadata': {'Business Analyst': 134720.18348623853,
-         'Data Scientist': 198522.7934044617,
-         'Hardware Engineer': 204625.0,
-         'Human Resources': 176951.21951219512,
-         'Management Consultant': 166675.61983471076,
-         'Marketing': 196268.01152737753,
-         'Mechanical Engineer': 163461.18721461188,
-         'Product Designer': 203468.91651865008,
-         'Product Manager': 258598.5576923077,
-         'Recruiter': 158741.93548387097,
-         'Sales': 215231.3432835821,
-         'Software Engineer': 193447.18545260062,
-         'Software Engineering Manager': 343458.6092715232,
-         'Solution Architect': 204312.05673758866,
-         'Technical Program Manager': 234952.1739130435}}]
+          'metadata': {'Business Analyst': 149000.0,
+          'Data Scientist': 226503.87596899224,
+          'Hardware Engineer': 238000.0,
+          'Human Resources': 170000.0,
+          'Marketing': 100000.0,
+          'Product Designer': 210266.66666666666,
+          'Product Manager': 276988.31775700935,
+          'Recruiter': 170000.0,
+          'Sales': 566500.0,
+          'Software Engineer': 231179.47594323294,
+          'Software Engineering Manager': 374254.23728813557,
+          'Solution Architect': 244271.18644067796,
+          'Technical Program Manager': 261500.0}},
+        {'id': '2019',
+          'metadata': {'Business Analyst': 116714.28571428571,
+          'Data Scientist': 211633.64055299538,
+          'Hardware Engineer': 221420.92457420923,
+          'Human Resources': 200857.14285714287,
+          'Marketing': 271428.5714285714,
+          'Mechanical Engineer': 113875.0,
+          'Product Designer': 213052.4193548387,
+          'Product Manager': 263759.62815405044,
+          'Recruiter': 179000.0,
+          'Sales': 312555.55555555556,
+          'Software Engineer': 219398.03498682004,
+          'Software Engineering Manager': 372315.4269972452,
+          'Solution Architect': 221489.08296943232,
+          'Technical Program Manager': 180000.0}},
+        {'id': '2020',
+          'metadata': {'Business Analyst': 124845.10250569475,
+          'Data Scientist': 202522.35772357724,
+          'Hardware Engineer': 219348.83720930232,
+          'Human Resources': 179453.125,
+          'Management Consultant': 158977.64227642276,
+          'Marketing': 200464.78873239437,
+          'Mechanical Engineer': 155619.77186311787,
+          'Product Designer': 208917.46031746033,
+          'Product Manager': 249851.02834908283,
+          'Recruiter': 152938.46153846153,
+          'Sales': 208838.6075949367,
+          'Software Engineer': 204269.1946308725,
+          'Software Engineering Manager': 351456.12708018156,
+          'Solution Architect': 212060.53811659192,
+          'Technical Program Manager': 239265.98837209304}},
+        {'id': '2021',
+          'metadata': {'Business Analyst': 134720.18348623853,
+          'Data Scientist': 198522.7934044617,
+          'Hardware Engineer': 204625.0,
+          'Human Resources': 176951.21951219512,
+          'Management Consultant': 166675.61983471076,
+          'Marketing': 196268.01152737753,
+          'Mechanical Engineer': 163461.18721461188,
+          'Product Designer': 203468.91651865008,
+          'Product Manager': 258598.5576923077,
+          'Recruiter': 158741.93548387097,
+          'Sales': 215231.3432835821,
+          'Software Engineer': 193447.18545260062,
+          'Software Engineering Manager': 343458.6092715232,
+          'Solution Architect': 204312.05673758866,
+          'Technical Program Manager': 234952.1739130435}}]
         ,
       backgroundColor: [
         "#246dec",
@@ -282,6 +384,11 @@ chartVersion.innerText = Chart.version;
 
 
 
+
+
+
+////////////////////////////////////////////////
+// Put your code here
 
 
 
