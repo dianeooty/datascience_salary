@@ -1,4 +1,5 @@
-# Predicting Our Future: A Deep Dive into Salary and Layoff Data
+# Predicting Our Future: 
+## A Deep Dive into Salary and Layoff Data
 Using the salaries and layoffs dataset to analyze trends, create data visualizations to reflect the findings and build machine learning models for salary and layoff predictions.
 
 
