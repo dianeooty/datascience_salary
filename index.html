@@ -20,7 +20,9 @@
 
             <!-- Header -->
             <header class="header">
-                <h1>Data Science Salaries and Laid Off</h1>
+                <h1>Predicting Our Future</h1>
+                <h2>A Deep Dive into Salary and Layoff Data</h2>
+                <h3><br>Diane Guzman, Jiamin Li, Kelsey Brantner, Laura Jordan, Xiaolin Ruan</h3>
             </header>    
             <!-- End -->
 
@@ -28,7 +30,7 @@
             <main class="main-container">
                 <!-- Salary -->
                 <div class="salary-title">
-                    <p class="font-weight-bold"><center>Salary</center></p>
+                    <p><center>Salary</center></p>
                 </div>
 
                 <div class="salary-charts">
@@ -65,41 +67,48 @@
 
                 <!-- Layoff -->
                 <div class="layoff-title">
-                    <p class="font-weight-bold"><center>Layoff</center></p>
+                    <p><center>Layoff</center></p>
                 </div>
 
                 <div class="main-cards">
 
                     <div class="card">
                         <div class="card-inner">
-                            <p class="text-primary">Total Lay Off in 2020</p>
+                            <p class="text-primary">Total Layoffs in 2020</p>
                             <span class="material-icons-outlined text-blue">waving_hand</span>
                         </div>
-                        <span class="text-primary font-weight-bold">80998</span>
+                        <span class="text-primary font-weight-bold">80,998</span>
                     </div>
 
                     <div class="card">
                         <div class="card-inner">
-                            <p class="text-primary">Total Lay Off in 2021</p>
+                            <p class="text-primary">Total Layoffs in 2021</p>
                             <span class="material-icons-outlined text-orange">follow_the_signs</span>
                         </div>
-                        <span class="text-primary font-weight-bold">15823</span>
+                        <span class="text-primary font-weight-bold">15,823</span>
                     </div>
 
                     <div class="card">
                         <div class="card-inner">
-                            <p class="text-primary">Total Lay Off in 2022</p>
+                            <p class="text-primary">Total Layoffs in 2022</p>
                             <span class="material-icons-outlined text-green">person_off</span>
                         </div>
-                        <span class="text-primary font-weight-bold">164511</span>
+                        <span class="text-primary font-weight-bold">164,511</span>
                     </div>
 
                     <div class="card">
                         <div class="card-inner">
-                            <p class="text-primary">Total Lay Off in 2023</p>
+                            <p class="text-primary">Total Layoffs in 2023</p>
                             <span class="material-icons-outlined text-red">sentiment_dissatisfied</span>
                         </div>
-                        <span class="text-primary font-weight-bold">185136</span>
+                        <span class="text-primary font-weight-bold">185,136</span>
+                    </div>
+                </div>
+
+                <div class="charts2">
+                    <div class="charts-card2">
+                        <p class="chart-title2">Layoff Trends by Quarter</p>
+                        <div id="area-chart"></div>
                     </div>
                 </div>
 
@@ -116,12 +125,6 @@
                     </div>
                 </div>
 
-                <div class="charts2">
-                    <div class="charts-card2">
-                        <p class="chart-title2">Layoff Trends by Quarter</p>
-                        <div id="area-chart"></div>
-                    </div>
-                </div>
             </main>
             <!-- End Main-->
 
@@ -129,7 +132,7 @@
             <!-- Model Home -->
             <section class="model" id="model">
                 <div class="model-content">
-                    <h3>Our Model</h3>
+                    <h3>Our Salaries Model</h3>
                     <h1>Predicted Value:</h1>
                     <p>Total Yearly Compensation</p>
                 </div>
@@ -165,8 +168,8 @@
                     </div>
 
                     <div class="display-box">
-                        <h3>Level</h3>
-                        <span class="material-icons-outlined text-blue">stairs</span>    
+                        <h3>Location</h3>
+                        <span class="material-icons-outlined text-blue">location_on</span>    
                     </div>
 
                     <div class="display-box">
@@ -193,7 +196,71 @@
                         <h3>Stock Grant Value</h3>
                         <span class="material-icons-outlined text-blue">auto_graph</span>    
                     </div>
+                </div>
             </section>
+
+            <!-- Prediction with drop down list -->
+            <!-- Kelsey!!! Put your code here -->
+            <section class="prediction">
+                <h2 class="heading"><center>Interactive Salary Prediction</center></h2>
+                
+                <div class="prediction-input">
+                    </form>
+                        </body>
+                        </html>
+                        <label for="year_salary">Year of salary: </label>
+                        <input type="number", name="year_salary", step="1">
+                        <br>
+                        <label for="year_experience">Year of expenience: </label>
+                        <input type="number", name="year_experience", step=".01">
+                        <br>
+                        <label for="year_experience_company">Year of experience at company: </label>
+                        <input type="number", name="year_experience_company", step=".01">
+                        <br>
+                        <label for="month">Month: </label>
+                        <input type="number", name="month", step="1">
+                        <br>
+                        <label for="bonus">Bonus: </label>
+                        <input type="number", name="bonus", step="1">
+                        <br>
+                        <label for="stock">Stock: </label>
+                        <input type="number", name="stock", step="1">
+                        <br>
+                        <select name="company" id="company">
+                            <option value="" selected="selected">A</option>
+                            <option value="Business Analyst">Business Analyst</option>
+                            <option value="Data Scientist">Data Scientist</option>
+                            <option value="Hardware Engineer">Hardware Engineer</option>
+                            <option value="Human Resources">Human Resources</option>
+                        </select>
+                        <br>
+                        <select name="job_title" id="job_title">
+                            <option value="Business Analyst">Business Analyst</option>
+                            <option value="Data Scientist">Data Scientist</option>
+                            <option value="Hardware Engineer">Hardware Engineer</option>
+                            <option value="Human Resources">Human Resources</option>
+                        </select>
+                        <br>
+                        <select name="gender" id="gender" >
+                            <option value="Female">Female</option>
+                            <option value="Male">Male</option>
+                            <option value="Other">Other</option>
+                        </select>
+                        <br>   
+                        <div class="submit">
+                            <input type="submit" value="Predict">        
+                        <br>
+                        <!----Kelsey check is this button if needed (just in case)-->
+                        <button type="submit">Predict</button>
+                        <br>
+                        {% if prediction_output%}
+                        <h3>Prediction:{{ prediction_output}}</h3>
+                        {% endif %}
+                        <!-- https://www.w3schools.com/tags/att_input_type_number.asp-->
+                    </form>
+                </div>
+            </section>
+            <!-- Prediction with drop down list end -->     
 
             <!-- Result -->
             <section class="model-result" id="result">
@@ -203,14 +270,7 @@
                     <div class="result-box">
                         <span class="material-icons-outlined text-green">verified</span> 
                         <h3>Accuracy</h3>
-                        <h1>86%</h1>   
-                    </div>
-                </div>
-
-                <div class="result-chart">
-                    <div class="result-chart-card">
-                        <p class="result-chart-title">Predictions VS. y test</p>
-                        <div id="scatter-chart"></div>
+                        <h1>81.3%</h1>   
                     </div>
                 </div>
             </section>
@@ -221,18 +281,18 @@
 
                 <div class="test-container">
                     <div class="test-box">
-                        <h3>Feature</h3>
+                        <h3>Features</h3>
                         <span class="material-icons-outlined text-blue">man</span> Male
                         <span class="material-icons-outlined text-blue">apartment</span> Amazon
                         <span class="material-icons-outlined text-blue">calendar_month</span> 2018
                         <span class="material-icons-outlined text-blue">event</span> March
-                        <span class="material-icons-outlined text-blue">badge</span> Sofeware Engineer
-                        <span class="material-icons-outlined text-blue">stairs</span> Level 4
+                        <span class="material-icons-outlined text-blue">badge</span> Software Engineer
+                        <span class="material-icons-outlined text-blue">location_on</span> Seattle
                     </div>
 
                     <div class="test-box">
                         <h3>Prediction:</h3>
-                        <span class="material-icons-outlined text-blue">attach_money</span> 219676  
+                        <span class="material-icons-outlined text-blue">attach_money</span> 2196769(need change)  
                     </div>
                 </div>
             </section>
@@ -241,9 +301,8 @@
             <!-- Model2 home -->
             <section class="model-layoff" id="model-layoff">
                 <div class="model-layoff-content">
-                    <h3>Second Model</h3>
-                    <h1>Predicted Value:</h1>
-                    <p>Layoff Happened</p>
+                    <h3>Layoff Prediction Model</h3>
+                    <h1>Predicting if a layoff will occur</h1>
                 </div>
 
                 <div class="model-layoff-img">
@@ -282,8 +341,8 @@
                     </div>
 
                     <div class="display-box">
-                        <h3>Level</h3>
-                        <span class="material-icons-outlined text-blue">stairs</span>    
+                        <h3>Location</h3>
+                        <span class="material-icons-outlined text-blue">location_on</span>    
                     </div>
 
                     <div class="display-box">
@@ -311,7 +370,7 @@
                         <span class="material-icons-outlined text-blue">auto_graph</span>    
                     </div>
             </section>
-            
+       
             <!-- Model2 Result -->
             <section class="layoff-model-result" id="result">
                 <h2 class="heading"><center>Our Result</center></h2>
@@ -320,17 +379,9 @@
                     <div class="result-box">
                         <span class="material-icons-outlined text-green">verified</span> 
                         <h3>Accuracy</h3>
-                        <h1>89%</h1>   
+                        <h1>89.6%</h1>   
                     </div>
                 </div>
-
-                <div class="layoff-chart">
-                    <div class="layoff-chart-card">
-                        <p class="layoff-chart-title">Accuracy For Model With Different Features</p>
-                        <div id="layoff-chart"></div>
-                    </div>
-                </div>
-
             </section>
 
             <!-- Model End -->

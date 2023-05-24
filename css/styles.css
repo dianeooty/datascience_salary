@@ -32,20 +32,26 @@ body {
     color: #f5b74f;
 }
 
-.font-weight-bold {
-    font-weight: 600;
-}
-
 /* ------------------- Header ------------------- */
 .header {
     grid-area: header;
-    height: 70px;
+    height: 90px;
     background-color: #ffffff;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 0 30px 0 30px;
     box-shadow: 0 6px 7px -4px rgba(0, 0, 0, 0.2);
+    column-gap: 5px;
+}
+
+.header h3 {
+    position: absolute;
+    align-items: left;
+    top: 50px;
+    right: 40px;
+    font-size: 0.75rem;
+    float:right;
 }
 
 .menu-icon {
@@ -65,6 +71,9 @@ body {
 .salary-title {
     display: flex;
     justify-content: space-between;
+    font-size: 2.0rem;
+    margin-bottom: 35px;
+    font-weight: 600;
 }
 
 .salary-title > p {
@@ -100,6 +109,9 @@ body {
 .layoff-title {
     display: flex;
     justify-content: space-between;
+    font-size: 2.0rem;
+    margin-bottom: 35px;
+    font-weight: 600;
 }
 
 .layoff-title > p {
@@ -216,6 +228,7 @@ body {
 }
 
 /*------------------------Model-------------------------*/
+/*------Salaries Model-----*/
 .model{
     display: flex;
     justify-content: center;
@@ -281,6 +294,53 @@ section {
 .display-box h3 {
     font-size: 1.3rem;
 }
+
+/*--Prediction--*/
+/*-- Kelsey!!! Put your code here --*/
+.prediction h2 {
+    font-size: 4.6rem;
+    margin-bottom: 5rem;
+}
+
+.prediction-input {   
+    display: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.prediction-input input{
+    border: .1rem solid #f5b74f;
+    border-radius: 1rem;
+}
+
+
+.prediction-input label {
+    font-size: 1.3rem;
+    gap: 10px;
+}
+
+.prediction-input select{
+    margin-top: 0.4rem;
+    border: .1rem solid #f5b74f;
+    border-radius: 1rem;
+}
+
+.prediction-input h3{
+    margin-top: 0.4rem;
+    font-size: 2.3rem;
+}
+
+.prediction-input .submit {
+    text-align: center;
+    justify-content: center;
+}
+
+.submit input {
+    margin-top: 0.5rem;
+    border: .2rem solid #cc3c43;
+    margin-bottom: 0.5rem;
+}
+
 
 /*--Result--*/
 .model-result h2 {
@@ -379,7 +439,7 @@ section {
     font-size: 1.3rem;
 }
 
-/* ---- Model with layoff -----*/
+/* ---- Layoff Model -----*/
 .model-layoff{
     display: flex;
     justify-content: center;
@@ -405,10 +465,6 @@ section {
     font-weight: 500;
 }
 
-.model-layoff-content p {
-    font-size: 3.2rem;
-    font-weight: 500;
-}
 
 /*--Features--*/
 .model-layoff-display h2 {
@@ -482,30 +538,7 @@ section {
     font-size: 1.3rem;
 }
 
-.layoff-chart {
-    display: grid;
-    grid-template-columns: 1fr;
-    margin-bottom: 50px;
-}
 
-.layoff-chart-card {
-    background-color: #ffffff;
-    margin-bottom: 20px;
-    padding: 25px;
-    box-sizing: border-box;
-    -webkit-column-break-inside: avoid;
-    border: 1px solid #d2d2d3;
-    border-radius: 5px;
-    box-shadow: 0 6px 7px -4px rgba(0, 0, 0, 0.2);
-}
-
-.layoff-chart-title {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 22px;
-    font-weight: 600;
-}
 
 /* -------Prediction ----------*/
 /* ---Put you code here----*/
