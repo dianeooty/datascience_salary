@@ -11,7 +11,7 @@ We used 2 datasets to analyze salary and layoff trends, create data visualizatio
 * [Project Status](#project-status)
 * [Room for Improvement](#room-for-improvement)
 * [Project Submission Files](#project-submission-files)
-* [Acknowledgements](#acknowledgements)
+* [Acknowledgements and Resources](#acknowledgements-and-resources)
 * [Contact](#contact)
 <!-- * [License](#license) -->
 
@@ -67,17 +67,26 @@ Room for improvement:
 - Create an Interactive Layoff Predictor on the HTML
 
 ## Project Submission Files
+* Proposal: Project 4 Proposal - Group 6.pdf
+* Salaries Dataset: salaries_cleaned.csv
+* Layoffs Dataset: layoffs_cleaned.csv
+* Entity Relationship Diagram: ERD.png
+* Notebook with Visualizations: Project4-Visualizations.ipynb
+* Notebook with Statistical Analysis: ENTER FILE NAME HERE
+* Machine Learning Notebook: ENTER FILE NAME HERE
+
+* Presentation Slide Deck: ENTER FILE NAME
+* Presentation HTML/CSS Code: ENTER FILE NAME
+* Presentation Website: ENTER WEB ADDRESS unless still running off Flask
 
 
-## Acknowledgements
+## Acknowledgements and Resources
 - Many thanks to our instructional team
 - Referenced for tutorial making a hat graph: https://matplotlib.org/stable/gallery/lines_bars_and_markers/hat_graph.html
-
-## Resources
-- https://www.kaggle.com/datasets/jackogozaly/data-science-and-stem-salaries
-- https://www.kaggle.com/datasets/swaptr/layoffs-2022
-- https://layoffs.fyi/
-- https://www.levels.fyi/
+- Dataset: https://www.kaggle.com/datasets/jackogozaly/data-science-and-stem-salaries
+- Dataset: https://www.kaggle.com/datasets/swaptr/layoffs-2022
+- Reference: https://layoffs.fyi/
+- Reference: https://www.levels.fyi/
 
 ## Contact
 Created by Diane Guzman, Kelsey Brantner, Jiamin Li, Laura Jordan and Xiaolin Ruan
