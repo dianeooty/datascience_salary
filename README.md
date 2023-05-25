@@ -72,7 +72,7 @@ Room for improvement:
 * Layoffs Dataset: layoffs_cleaned.csv
 * Entity Relationship Diagram: ERD.png
 * Notebook with Visualizations: Project4-Visualizations.ipynb
-* Notebook with Statistical Analysis: ENTER FILE NAME HERE
+* Notebook with Statistical Analysis: datasciencesalaries_corr_update2.ipynb
 * Machine Learning Notebook: ENTER FILE NAME HERE
 
 * Presentation Slide Deck: ENTER FILE NAME
