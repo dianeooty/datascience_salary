@@ -1,6 +1,6 @@
 # Predicting Our Future: 
 ## A Deep Dive into Salary and Layoff Data
-Using the salaries and layoffs dataset to analyze trends, create data visualizations to reflect the findings and build machine learning models for salary and layoff predictions.
+Using the salaries and layoffs dataset to analyze trends, create data visualizations to reflect the findings and build machine learning models for salary and layoff predictions. 
 
 
 ## Table of Contents
@@ -44,7 +44,6 @@ List the ready features here:
 - Interactive Salary Predictor
 - YoY Salary by Title bar chart 
 - Map that shows the locations and total layoffs by year
-- 
 
 
 ## Screenshots
@@ -54,11 +53,16 @@ Top 20 Highest Paying Companies (Mean Average)
 Average Salary by Title YoY
 ![1](https://github.com/dianeooty/datascience_salary/assets/117790100/e6d07154-bbb0-497e-900f-2ab70a7b781e)
 
+Layoff Employee Distribution Map
+![1](https://github.com/dianeooty/datascience_salary/assets/117790100/510e3854-9208-488c-9c49-c12f445d91d5)
+
+Layoff Trends 
+![2](https://github.com/dianeooty/datascience_salary/assets/117790100/c5667145-ae65-4ef9-b624-958568be0144)
 
 ## Setup
-- Data Cleanup: All original data files can be found in the Resources folder.  The notebook titled salaries-cleaned.ipynb contains all the codes for data cleaning and preparation for database upload.
+- Data Cleanup: All original data files can be found in the Resources folder.  The notebook titled data_cleanup.ipynb contains all the codes for data cleaning and preparation for database upload.
 - Data Exploration: The notebook titled Project4-Visualizations.ipynb ingests the clean data and does a variety of exploratory views of the salary and layoff dataset. There are cooresponding visualizations for the different views and datasets.
-- Statistical Analysis:
+- Statistical Analysis: The notebook titled datasciencesalaries_corr_update2.ipynb contains all the statistical analysis on the salaries dataset.
 - Machine Learning:
 
 
@@ -68,7 +72,7 @@ Average Salary by Title YoY
 
 
 ## Project Status
-Project is in progress
+Project is in progress.
 
 
 ## Room for Improvement
