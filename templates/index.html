@@ -132,7 +132,7 @@
             <!-- Model Home -->
             <section class="model" id="model">
                 <div class="model-content">
-                    <h3>Our Salaries Model</h3>
+                    <h3>Salaries Model</h3>
                     <h1>Predicted Value:</h1>
                     <p>Total Yearly Compensation</p>
                 </div>
@@ -234,7 +234,7 @@
                         <label for="bonus">Bonus:</label>
                         <input type="number", name="bonus", step="1"> 
                         <br>
-                        <label for="stock">Stock:</label>
+                        <label for="stock">Stock Value:</label>
                         <input type="number", name="stock", step="1"> 
                         <br>
                         <label for="company">Company:</label>
@@ -356,6 +356,7 @@
                                 <button type="submit">Predict</button>
                                 <br>
                                 {% if prediction_output%}
+                                <!-- <h3>Input:{{ input_list}}</h3> -->
                                 <h3>Prediction:{{ prediction_output}}</h3>
                                 {% endif %}
                                 <!-- https://www.w3schools.com/tags/att_input_type_number.asp-->
@@ -366,7 +367,7 @@
             <!----->
 
             <!-- Result -->
-            <section class="model-result" id="result">
+            <!-- <section class="model-result" id="result">
                 <h2 class="heading"><center>Our Result</center></h2>
 
                 <div class="result-container">
@@ -376,7 +377,7 @@
                         <h1>81.3%</h1>   
                     </div>
                 </div>
-            </section>
+            </section> -->
             
             <!-- Model with layoff -->
             <!-- Model2 home -->
