@@ -28,7 +28,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def home():
-    return render_template('input.html') 
+    return render_template('index.html') 
 
 @app.route('/result', methods=['POST', 'GET'])
 def resutls():
@@ -391,7 +391,7 @@ def resutls():
 
 
 
-    return render_template('input.html',  prediction_output= prediction_output) 
+    return render_template('index.html',  prediction_output= prediction_output) 
 
 if __name__ == '__main__':
     app.run(debug=True)
