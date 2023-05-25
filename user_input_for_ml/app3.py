@@ -286,7 +286,7 @@ def resutls():
 
     
     prediction_output = pickled_model.predict(X_input_test_scaled)
-    prediction_output=prediction_output[0]
+    prediction_output="$"+str(round(prediction_output[0], 2))
 
 
 
