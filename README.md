@@ -81,7 +81,7 @@ Room for improvement:
 
 ## Acknowledgements
 - Many thanks to our instructional team.
-- 
+- Referenced for tutorial making a hat graph: https://matplotlib.org/stable/gallery/lines_bars_and_markers/hat_graph.html
 
 ## Resources
 - https://www.kaggle.com/datasets/jackogozaly/data-science-and-stem-salaries
