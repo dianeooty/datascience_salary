@@ -57,7 +57,7 @@ Average Salary by Title YoY
 
 ## Setup
 - Data Cleanup: All original data files can be found in the Resources folder.  The notebook titled salaries-cleaned.ipynb contains all the codes for data cleaning and preparation for database upload.
-- Data Exploration: 
+- Data Exploration: The notebook titled Project4-Visualizations.ipynb ingests the clean data and does a variety of exploratory views of the salary and layoff dataset. There are cooresponding visualizations for the different views and datasets.
 - Statistical Analysis:
 - Machine Learning:
 
