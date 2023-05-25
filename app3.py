@@ -12,7 +12,7 @@ import warnings
 warnings.filterwarnings('ignore')
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import StandardScaler
-import tensorflow as tf
+
 from sklearn.datasets import make_regression
 from sklearn.multioutput import MultiOutputRegressor
 from sklearn.ensemble import GradientBoostingRegressor
@@ -32,7 +32,7 @@ def home():
 
 @app.route('/result', methods=['POST', 'GET'])
 def resutls():
-    dummies_df = pd.read_csv('dummies_table.csv')
+    dummies_df = pd.read_csv('Resources/dummies_table.csv')
     dummies_df = dummies_df.drop(columns=['Unnamed: 0', 'totalyearlycompensation'])
     dummies_df_columns_list=list(dummies_df.columns)
     blank_dummies_df=pd.DataFrame(dummies_df_columns_list)
@@ -64,8 +64,9 @@ def resutls():
     #input_stock
     input_stock=request.form['stock']
     blank_dummies_df['stockgrantvalue'] =input_stock
+    print(len(blank_dummies_df.columns))
     #input_company
-    input_company=request.form['company']
+    input_company=[request.form['company']]
     for x in input_company:
         if x =='Amazon':
             blank_dummies_df['company_Amazon'] = 1
@@ -112,7 +113,7 @@ def resutls():
         else: 
             print("Company not found")
     #input_job_title
-    input_title=request.form['job_title']
+    input_title=[request.form['job_title']]
     for x in input_title:
         if x =='Business Analyst':
             blank_dummies_df['title_Business Analyst'] = 1
@@ -147,7 +148,7 @@ def resutls():
         else: 
             print("Title not found")
     #input_gender
-    input_gender=request.form['gender']
+    input_gender=[request.form['gender']]
     for x in input_gender:
         if x =='Female':
             blank_dummies_df['gender_Female'] = 1
@@ -162,113 +163,113 @@ def resutls():
 
 
     #input_location
-    input_location=request.form['location']
+    input_location=[request.form['location']]
     for x in input_location:
         if x=="Amsterdam, NH, Netherlands": 
-            blank_dummies_df["title_Amsterdam, NH, Netherlands"] = 1
+            blank_dummies_df["location_Amsterdam, NH, Netherlands"] = 1
         elif x=="Arlington, VA": 
-            blank_dummies_df["title_Arlington, VA"] = 1
+            blank_dummies_df["location_Arlington, VA"] = 1
         elif x=="Atlanta, GA": 
-            blank_dummies_df["title_Atlanta, GA"] = 1
+            blank_dummies_df["location_Atlanta, GA"] = 1
         elif x=="Austin, TX": 
-            blank_dummies_df["title_Austin, TX"] = 1
+            blank_dummies_df["location_Austin, TX"] = 1
         elif x=="Bangalore, KA, India": 
-            blank_dummies_df["title_Bangalore, KA, India"] = 1
+            blank_dummies_df["location_Bangalore, KA, India"] = 1
         elif x=="Bellevue, WA": 
-            blank_dummies_df["title_Bellevue, WA"] = 1
+            blank_dummies_df["location_Bellevue, WA"] = 1
         elif x=="Bengaluru, KA, India": 
-            blank_dummies_df["title_Bengaluru, KA, India"] = 1
+            blank_dummies_df["location_Bengaluru, KA, India"] = 1
         elif x=="Berlin, BE, Germany": 
-            blank_dummies_df["title_Berlin, BE, Germany"] = 1
+            blank_dummies_df["location_Berlin, BE, Germany"] = 1
         elif x=="Boston, MA": 
-            blank_dummies_df["title_Boston, MA"] = 1
+            blank_dummies_df["location_Boston, MA"] = 1
         elif x=="Boulder, CO": 
-            blank_dummies_df["title_Boulder, CO"] = 1
+            blank_dummies_df["location_Boulder, CO"] = 1
         elif x=="Cambridge, MA": 
-            blank_dummies_df["title_Cambridge, MA"] = 1
+            blank_dummies_df["location_Cambridge, MA"] = 1
         elif x=="Chicago, IL": 
-            blank_dummies_df["title_Chicago, IL"] = 1
+            blank_dummies_df["location_Chicago, IL"] = 1
         elif x=="Cupertino, CA": 
-            blank_dummies_df["title_Cupertino, CA"] = 1
+            blank_dummies_df["location_Cupertino, CA"] = 1
         elif x=="Dallas, TX": 
-            blank_dummies_df["title_Dallas, TX"] = 1
+            blank_dummies_df["location_Dallas, TX"] = 1
         elif x=="Denver, CO": 
-            blank_dummies_df["title_Denver, CO"] = 1
+            blank_dummies_df["location_Denver, CO"] = 1
         elif x=="Dublin, DN, Ireland": 
-            blank_dummies_df["title_Dublin, DN, Ireland"] = 1
+            blank_dummies_df["location_Dublin, DN, Ireland"] = 1
         elif x=="Hillsboro, OR": 
-            blank_dummies_df["title_Hillsboro, OR"] = 1
+            blank_dummies_df["location_Hillsboro, OR"] = 1
         elif x=="Houston, TX": 
-            blank_dummies_df["title_Houston, TX"] = 1
+            blank_dummies_df["location_Houston, TX"] = 1
         elif x=="Hyderabad, TS, India": 
-            blank_dummies_df["title_Hyderabad, TS, India"] = 1
+            blank_dummies_df["location_Hyderabad, TS, India"] = 1
         elif x=="Irvine, CA": 
-            blank_dummies_df["title_Irvine, CA"] = 1
+            blank_dummies_df["location_Irvine, CA"] = 1
         elif x=="London, EN, United Kingdom": 
-            blank_dummies_df["title_London, EN, United Kingdom"] = 1
+            blank_dummies_df["location_London, EN, United Kingdom"] = 1
         elif x=="Los Angeles, CA": 
-            blank_dummies_df["title_Los Angeles, CA"] = 1
+            blank_dummies_df["location_Los Angeles, CA"] = 1
         elif x=="Los Gatos, CA": 
-            blank_dummies_df["title_Los Gatos, CA"] = 1
+            blank_dummies_df["location_Los Gatos, CA"] = 1
         elif x=="Menlo Park, CA": 
-            blank_dummies_df["title_Menlo Park, CA"] = 1
+            blank_dummies_df["location_Menlo Park, CA"] = 1
         elif x=="Minneapolis, MN": 
-            blank_dummies_df["title_Minneapolis, MN"] = 1
+            blank_dummies_df["location_Minneapolis, MN"] = 1
         elif x=="Moscow, MC, Russia": 
-            blank_dummies_df["title_Moscow, MC, Russia"] = 1
+            blank_dummies_df["location_Moscow, MC, Russia"] = 1
         elif x=="Mountain View, CA": 
-            blank_dummies_df["title_Mountain View, CA"] = 1
+            blank_dummies_df["location_Mountain View, CA"] = 1
         elif x=="New York, NY": 
-            blank_dummies_df["title_New York, NY"] = 1
+            blank_dummies_df["location_New York, NY"] = 1
         elif x=="Other": 
-            blank_dummies_df["title_Other"] = 1
+            blank_dummies_df["location_Other"] = 1
         elif x=="Palo Alto, CA": 
-            blank_dummies_df["title_Palo Alto, CA"] = 1
+            blank_dummies_df["location_Palo Alto, CA"] = 1
         elif x=="Philadelphia, PA": 
-            blank_dummies_df["title_Philadelphia, PA"] = 1
+            blank_dummies_df["location_Philadelphia, PA"] = 1
         elif x=="Pittsburgh, PA": 
-            blank_dummies_df["title_Pittsburgh, PA"] = 1
+            blank_dummies_df["location_Pittsburgh, PA"] = 1
         elif x=="Plano, TX": 
-            blank_dummies_df["title_Plano, TX"] = 1
+            blank_dummies_df["location_Plano, TX"] = 1
         elif x=="Pleasanton, CA": 
-            blank_dummies_df["title_Pleasanton, CA"] = 1
+            blank_dummies_df["location_Pleasanton, CA"] = 1
         elif x=="Portland, OR": 
-            blank_dummies_df["title_Portland, OR"] = 1
+            blank_dummies_df["location_Portland, OR"] = 1
         elif x=="Raleigh, NC": 
-            blank_dummies_df["title_Raleigh, NC"] = 1
+            blank_dummies_df["location_Raleigh, NC"] = 1
         elif x=="Redmond, WA": 
-            blank_dummies_df["title_Redmond, WA"] = 1
+            blank_dummies_df["location_Redmond, WA"] = 1
         elif x=="Redwood City, CA": 
-            blank_dummies_df["title_Redwood City, CA"] = 1
+            blank_dummies_df["location_Redwood City, CA"] = 1
         elif x=="San Diego, CA": 
-            blank_dummies_df["title_San Diego, CA"] = 1
+            blank_dummies_df["location_San Diego, CA"] = 1
         elif x=="San Francisco, CA": 
-            blank_dummies_df["title_San Francisco, CA"] = 1
+            blank_dummies_df["location_San Francisco, CA"] = 1
         elif x=="San Jose, CA": 
-            blank_dummies_df["title_San Jose, CA"] = 1
+            blank_dummies_df["location_San Jose, CA"] = 1
         elif x=="Santa Clara, CA": 
-            blank_dummies_df["title_Santa Clara, CA"] = 1
+            blank_dummies_df["location_Santa Clara, CA"] = 1
         elif x=="Seattle, WA": 
-            blank_dummies_df["title_Seattle, WA"] = 1
+            blank_dummies_df["location_Seattle, WA"] = 1
         elif x=="Singapore, SG, Singapore": 
-            blank_dummies_df["title_Singapore, SG, Singapore"] = 1
+            blank_dummies_df["location_Singapore, SG, Singapore"] = 1
         elif x=="Sunnyvale, CA": 
-            blank_dummies_df["title_Sunnyvale, CA"] = 1
+            blank_dummies_df["location_Sunnyvale, CA"] = 1
         elif x=="Sydney, NS, Australia": 
-            blank_dummies_df["title_Sydney, NS, Australia"] = 1
+            blank_dummies_df["location_Sydney, NS, Australia"] = 1
         elif x=="Taipei, TP, Taiwan": 
-            blank_dummies_df["title_Taipei, TP, Taiwan"] = 1
+            blank_dummies_df["location_Taipei, TP, Taiwan"] = 1
         elif x=="Toronto, ON, Canada": 
-            blank_dummies_df["title_Toronto, ON, Canada"] = 1
+            blank_dummies_df["location_Toronto, ON, Canada"] = 1
         elif x=="Vancouver, BC, Canada": 
-            blank_dummies_df["title_Vancouver, BC, Canada"] = 1
+            blank_dummies_df["location_Vancouver, BC, Canada"] = 1
         elif x=="Washington, DC": 
-            blank_dummies_df["title_Washington, DC"] = 1
+            blank_dummies_df["location_Washington, DC"] = 1
         elif x=="Zurich, ZH, Switzerland": 
-            blank_dummies_df["title_Zurich, ZH, Switzerland"] = 1
+            blank_dummies_df["location_Zurich, ZH, Switzerland"] = 1
         else: 
             print("Location not found")
-    #input_list=[input_year, input_year_experience, input_year_at_company, input_month, input_bonus, input_stock, input_company, input_title, input_gender]
+    input_list=["Year:", input_year, "Month", input_month,"Years Experience", input_year_experience, "Years Experience at Company", input_year_at_company, "Bonus", input_bonus, "Stock Value", input_stock, "Company", input_company, "Job Title", input_title, "Gender", input_gender, "Location", input_location]
     #input_list=output["input_list"]
     #reduced_df_input_example = [ 'Amazon', 2018, 'Sofeware Engineer',  'Male', 'L4',
      #  0, 0, 47.603832, -122.330062, 3, 0, 0]
@@ -290,7 +291,7 @@ def resutls():
 
 
 
-    return render_template('index.html',  prediction_output= prediction_output) 
+    return render_template('index.html',  prediction_output= prediction_output, input_list=input_list) 
 
 if __name__ == '__main__':
     app.run(debug=True)
