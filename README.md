@@ -53,9 +53,11 @@ Layoff Trends
 ![2](https://github.com/dianeooty/datascience_salary/assets/117790100/c5667145-ae65-4ef9-b624-958568be0144)
 
 Postgresql 
+
 ![1](https://github.com/dianeooty/datascience_salary/assets/117790100/9919c84a-d566-4b34-a024-158dbe46bce6)
 
 MongoDB Compass
+
 ![2](https://github.com/dianeooty/datascience_salary/assets/117790100/d86f91d7-f1d5-46f9-9fba-a8b5bcf4744f)
 
 ## Setup
