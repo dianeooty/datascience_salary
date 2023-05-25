@@ -43,18 +43,23 @@ List the ready features here:
 Top 20 Highest Paying Companies (based on Company's Average Salary)
 ![2](https://github.com/dianeooty/datascience_salary/assets/117790100/57494e5c-59e1-4bb8-9cc2-8aa5c0cff12d)
 
+
 Average Salary by Title YoY
 ![1](https://github.com/dianeooty/datascience_salary/assets/117790100/e6d07154-bbb0-497e-900f-2ab70a7b781e)
+
 
 Layoff Employee Distribution Map
 ![1](https://github.com/dianeooty/datascience_salary/assets/117790100/510e3854-9208-488c-9c49-c12f445d91d5)
 
+
 Layoff Trends 
 ![2](https://github.com/dianeooty/datascience_salary/assets/117790100/c5667145-ae65-4ef9-b624-958568be0144)
+
 
 Postgresql 
 
 ![1](https://github.com/dianeooty/datascience_salary/assets/117790100/9919c84a-d566-4b34-a024-158dbe46bce6)
+
 
 MongoDB Compass
 
