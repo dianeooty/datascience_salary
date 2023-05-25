@@ -117,6 +117,7 @@ Room for improvement:
 - Dataset: https://www.kaggle.com/datasets/swaptr/layoffs-2022
 - Reference: https://layoffs.fyi/
 - Reference: https://www.levels.fyi/
+- Reference for Seaborn graph: https://seaborn.pydata.org/
 
 ## Group
 Created by Diane Guzman, Kelsey Brantner, Jiamin Li, Laura Jordan and Xiaolin Ruan
