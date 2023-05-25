@@ -1,7 +1,6 @@
 # Predicting Our Future: A Deep Dive into Salary and Layoff Data
 We used 2 datasets to analyze salary and layoff trends, create data visualizations to reflect the findings and build machine learning models for salary and layoff predictions. 
 
-
 ## Table of Contents
 * [Project Status](#project-status)
 * [Technologies Used](#technologies-used)
@@ -13,7 +12,6 @@ We used 2 datasets to analyze salary and layoff trends, create data visualizatio
 * [Project Submission Files](#project-submission-files)
 * [Acknowledgements and Resources](#acknowledgements-and-resources)
 * [Group](#group)
-<!-- * [License](#license) -->
 
 ## Project Status
 Project is complete
@@ -54,11 +52,18 @@ Layoff Employee Distribution Map
 Layoff Trends 
 ![2](https://github.com/dianeooty/datascience_salary/assets/117790100/c5667145-ae65-4ef9-b624-958568be0144)
 
+Postgresql 
+![1](https://github.com/dianeooty/datascience_salary/assets/117790100/9919c84a-d566-4b34-a024-158dbe46bce6)
+
+MongoDB Compass
+![2](https://github.com/dianeooty/datascience_salary/assets/117790100/d86f91d7-f1d5-46f9-9fba-a8b5bcf4744f)
+
 ## Setup
 - Data Cleanup: All original data files can be found in the Resources folder.  The notebook titled data_cleanup.ipynb contains all the codes for data cleaning and preparation for database upload.
 - Data Exploration: The notebook titled Project4-Visualizations.ipynb ingests the clean data and does a variety of exploratory views of the salary and layoff dataset. There are cooresponding visualizations for the different views and datasets.
 - Statistical Analysis: The notebook titled datasciencesalaries_corr_update2.ipynb contains all the statistical analysis on the salaries dataset.
 - Machine Learning:
+- Databases: Cleaned datasets imported to Postgresql with using file titled schems.sql.  Also imported to MongoDB when running codes in data_cleanup.ipynb.
 
 ## Room for Improvement
 
@@ -68,12 +73,14 @@ Room for improvement:
 
 ## Project Submission Files
 * Proposal: Project 4 Proposal - Group 6.pdf
-* Salaries Dataset: salaries_cleaned.csv
+* Salaries Dataset: data_cleanup.csv
 * Layoffs Dataset: layoffs_cleaned.csv
 * Entity Relationship Diagram: ERD.png
 * Notebook with Visualizations: Project4-Visualizations.ipynb
 * Notebook with Statistical Analysis: datasciencesalaries_corr_update2.ipynb
 * Machine Learning Notebook: ENTER FILE NAME HERE
+* Postgresql Database: schemas.sql and ERD.png
+* MongoDB: data_cleanup.ipynb
 
 * Presentation Slide Deck: ENTER FILE NAME
 * Presentation HTML/CSS Code: ENTER FILE NAME
