@@ -209,162 +209,162 @@
                         <h1>81.3%</h1>   
                     </div>
                 </div>
-
+            </section> <!-- Updated: missing close section for model result -->
+            
             <!-- Prediction with drop down list -->
             <!-- Kelsey!!! Put your code here -->
             <section class="prediction">
                 <h2 class="heading"><center>Interactive Salary Prediction</center></h2>
                 
                 <div class="prediction-input">
-                </body>
-                </html>
-                <form name="salary_model" id="salary_model" method="POST" action="/result">
-                <label for="year_salary">Year(YYYY):</label>
-                <input type="number", name="year_salary", step="1">
-                <br>
-                <label for="month">Month (MM):</label>
-                <input type="number", name="month", step="1">
-                <br>
-                <label for="year_experience">Years of Experience:</label>
-                <input type="number", name="year_experience", step=".01">
-                <br>
-                <!-- update from team meeting -->
-                <label for="year_experience_company">Years of Experience at Company:</label>
-                <input type="number", name="year_experience_company", step=".01">
-                <br>
-                <label for="bonus">Bonus:</label>
-                <input type="number", name="bonus", step="1"> 
-                <br>
-                <label for="stock">Stock:</label>
-                <input type="number", name="stock", step="1"> 
-                <br>
-                <label for="company">Company:</label>
-                <select name="company" id="company">
-                    <option value="" selected="selected">Select from List</option>
-                    <option value="Amazon">Amazon</option>
-                    <option value="Apple">Apple</option>
-                    <option value="Bloomberg">Bloomberg</option>
-                    <option value="Capital One">Capital One</option>
-                    <option value="Cisco">Cisco</option>
-                    <option value="Facebook">Facebook</option>
-                    <option value="Goldman Sachs">Goldman Sachs</option>
-                    <option value="Google">Google</option>
-                    <option value="IBM">IBM</option>
-                    <option value="Intel">Intel</option>
-                    <option value="Intuit">Intuit</option>
-                    <option value="JPMorgan Chase">JPMorgan Chase</option>
-                    <option value="LinkedIn">LinkedIn</option>
-                    <option value="Microsoft">Microsoft</option>
-                    <option value="Oracle">Oracle</option>
-                    <option value="PayPal">PayPal</option>
-                    <option value="Qualcomm">Qualcomm</option>
-                    <option value="SalesForce">SalesForce</option>
-                    <option value="Uber">Uber</option>
-                    <option value="VMware">VMware</option>
-                    <option value="Other">Other</option>
-                </select>
-                
-                <br>
-                <label for="job_title">Job Title:</label>
-                <select name="job_title" id="job_title">
-                    <option value="" selected="selected">Select from List</option>
-                    <option value="Business Analyst">Business Analyst</option>
-                    <option value="Data Scientist">Data Scientist</option>
-                    <option value="Hardware Engineer">Hardware Engineer</option>
-                    <option value="Human Resources">Human Resources</option>
-                    <option value="Management Consultant">Management Consultant</option>
-                    <option value="Marketing">Marketing</option>
-                    <option value="Mechanical Engineer">Mechanical Engineer</option>
-                    <option value="Product Designer">Product Designer</option>
-                    <option value="Product Manager">Product Manager</option>
-                    <option value="Recruiter">Recruiter</option>
-                    <option value="Sales">Sales</option>
-                    <option value="Software Engineer">Software Engineer</option>
-                    <option value="Software Engineering Manager">Software Engineering Manager</option>
-                    <option value="Solution Architect">Solution Architect</option>
-                    <option value="Technical Program Manager">Technical Program Manager</option>
-                </select>
-                <br>
-                <label for="gender">Gender:</label>
-                <select name="gender" id="gender" >
-                    <option value="" selected="selected">Select from List</option>
-                    <option value="Female">Female</option>
-                    <option value="Male">Male</option>
-                    <option value="Other">Other</option>
-                </select>
-                <br>
-                <label for="location">Location:</label>
-                <select name="location" id="location">
-                    <option value="" selected="selected">Select from List</option>
-                    <option value="Amsterdam, NH, Netherlands">Amsterdam, NH, Netherlands</option>
-                    <option value="Arlington, VA">Arlington, VA</option>
-                    <option value="Atlanta, GA">Atlanta, GA</option>
-                    <option value="Austin, TX">Austin, TX</option>
-                    <option value="Bangalore, KA, India">Bangalore, KA, India</option>
-                    <option value="Bellevue, WA">Bellevue, WA</option>
-                    <option value="Bengaluru, KA, India">Bengaluru, KA, India</option>
-                    <option value="Berlin, BE, Germany">Berlin, BE, Germany</option>
-                    <option value="Boston, MA">Boston, MA</option>
-                    <option value="Boulder, CO">Boulder, CO</option>
-                    <option value="Cambridge, MA">Cambridge, MA</option>
-                    <option value="Chicago, IL">Chicago, IL</option>
-                    <option value="Cupertino, CA">Cupertino, CA</option>
-                    <option value="Dallas, TX">Dallas, TX</option>
-                    <option value="Denver, CO">Denver, CO</option>
-                    <option value="Dublin, DN, Ireland">Dublin, DN, Ireland</option>
-                    <option value="Hillsboro, OR">Hillsboro, OR</option>
-                    <option value="Houston, TX">Houston, TX</option>
-                    <option value="Hyderabad, TS, India">Hyderabad, TS, India</option>
-                    <option value="Irvine, CA">Irvine, CA</option>
-                    <option value="London, EN, United Kingdom">London, EN, United Kingdom</option>
-                    <option value="Los Angeles, CA">Los Angeles, CA</option>
-                    <option value="Los Gatos, CA">Los Gatos, CA</option>
-                    <option value="Menlo Park, CA">Menlo Park, CA</option>
-                    <option value="Minneapolis, MN">Minneapolis, MN</option>
-                    <option value="Moscow, MC, Russia">Moscow, MC, Russia</option>
-                    <option value="Mountain View, CA">Mountain View, CA</option>
-                    <option value="New York, NY">New York, NY</option>
-                    <option value="Palo Alto, CA">Palo Alto, CA</option>
-                    <option value="Philadelphia, PA">Philadelphia, PA</option>
-                    <option value="Pittsburgh, PA">Pittsburgh, PA</option>
-                    <option value="Plano, TX">Plano, TX</option>
-                    <option value="Pleasanton, CA">Pleasanton, CA</option>
-                    <option value="Portland, OR">Portland, OR</option>
-                    <option value="Raleigh, NC">Raleigh, NC</option>
-                    <option value="Redmond, WA">Redmond, WA</option>
-                    <option value="Redwood City, CA">Redwood City, CA</option>
-                    <option value="San Diego, CA">San Diego, CA</option>
-                    <option value="San Francisco, CA">San Francisco, CA</option>
-                    <option value="San Jose, CA">San Jose, CA</option>
-                    <option value="Santa Clara, CA">Santa Clara, CA</option>
-                    <option value="Seattle, WA">Seattle, WA</option>
-                    <option value="Singapore, SG, Singapore">Singapore, SG, Singapore</option>
-                    <option value="Sunnyvale, CA">Sunnyvale, CA</option>
-                    <option value="Sydney, NS, Australia">Sydney, NS, Australia</option>
-                    <option value="Taipei, TP, Taiwan">Taipei, TP, Taiwan</option>
-                    <option value="Toronto, ON, Canada">Toronto, ON, Canada</option>
-                    <option value="Vancouver, BC, Canada">Vancouver, BC, Canada</option>
-                    <option value="Washington, DC">Washington, DC</option>
-                    <option value="Zurich, ZH, Switzerland">Zurich, ZH, Switzerland</option>
-                    <option value="Other">Other</option>
-                </select>
-                <br>
-                    
-      
+                    <form name="salary_model" id="salary_model" method="POST" action="/result">
+                        <label for="year_salary">Year(YYYY):</label>
+                        <input type="number", name="year_salary", step="1">
                         <br>
-                        <!----Kelsey check is this button if needed (just in case)-->
-                        <!----Xiaolin thanks for the heads up! I deleted the duplicate button-->
-                        <button type="submit">Predict</button>
+                        <label for="month">Month (MM):</label>
+                        <input type="number", name="month", step="1">
                         <br>
-                        {% if prediction_output%}
-                        <h3>Prediction:{{ prediction_output}}</h3>
-                        {% endif %}
-                        <!-- https://www.w3schools.com/tags/att_input_type_number.asp-->
+                        <label for="year_experience">Years of Experience:</label>
+                        <input type="number", name="year_experience", step=".01">
+                        <br>
+                        <!-- update from team meeting -->
+                        <label for="year_experience_company">Years of Experience at Company:</label>
+                        <input type="number", name="year_experience_company", step=".01">
+                        <br>
+                        <label for="bonus">Bonus:</label>
+                        <input type="number", name="bonus", step="1"> 
+                        <br>
+                        <label for="stock">Stock:</label>
+                        <input type="number", name="stock", step="1"> 
+                        <br>
+                        <label for="company">Company:</label>
+                        <select name="company" id="company">
+                            <option value="" selected="selected">Select from List</option>
+                            <option value="Amazon">Amazon</option>
+                            <option value="Apple">Apple</option>
+                            <option value="Bloomberg">Bloomberg</option>
+                            <option value="Capital One">Capital One</option>
+                            <option value="Cisco">Cisco</option>
+                            <option value="Facebook">Facebook</option>
+                            <option value="Goldman Sachs">Goldman Sachs</option>
+                            <option value="Google">Google</option>
+                            <option value="IBM">IBM</option>
+                            <option value="Intel">Intel</option>
+                            <option value="Intuit">Intuit</option>
+                            <option value="JPMorgan Chase">JPMorgan Chase</option>
+                            <option value="LinkedIn">LinkedIn</option>
+                            <option value="Microsoft">Microsoft</option>
+                            <option value="Oracle">Oracle</option>
+                            <option value="PayPal">PayPal</option>
+                            <option value="Qualcomm">Qualcomm</option>
+                            <option value="SalesForce">SalesForce</option>
+                            <option value="Uber">Uber</option>
+                            <option value="VMware">VMware</option>
+                            <option value="Other">Other</option>
+                        </select>
+                        
+                        <br>
+                        <label for="job_title">Job Title:</label>
+                        <select name="job_title" id="job_title">
+                            <option value="" selected="selected">Select from List</option>
+                            <option value="Business Analyst">Business Analyst</option>
+                            <option value="Data Scientist">Data Scientist</option>
+                            <option value="Hardware Engineer">Hardware Engineer</option>
+                            <option value="Human Resources">Human Resources</option>
+                            <option value="Management Consultant">Management Consultant</option>
+                            <option value="Marketing">Marketing</option>
+                            <option value="Mechanical Engineer">Mechanical Engineer</option>
+                            <option value="Product Designer">Product Designer</option>
+                            <option value="Product Manager">Product Manager</option>
+                            <option value="Recruiter">Recruiter</option>
+                            <option value="Sales">Sales</option>
+                            <option value="Software Engineer">Software Engineer</option>
+                            <option value="Software Engineering Manager">Software Engineering Manager</option>
+                            <option value="Solution Architect">Solution Architect</option>
+                            <option value="Technical Program Manager">Technical Program Manager</option>
+                        </select>
+                        <br>
+                        <label for="gender">Gender:</label>
+                        <select name="gender" id="gender" >
+                            <option value="" selected="selected">Select from List</option>
+                            <option value="Female">Female</option>
+                            <option value="Male">Male</option>
+                            <option value="Other">Other</option>
+                        </select>
+                        <br>
+                        <label for="location">Location:</label>
+                        <select name="location" id="location">
+                            <option value="" selected="selected">Select from List</option>
+                            <option value="Amsterdam, NH, Netherlands">Amsterdam, NH, Netherlands</option>
+                            <option value="Arlington, VA">Arlington, VA</option>
+                            <option value="Atlanta, GA">Atlanta, GA</option>
+                            <option value="Austin, TX">Austin, TX</option>
+                            <option value="Bangalore, KA, India">Bangalore, KA, India</option>
+                            <option value="Bellevue, WA">Bellevue, WA</option>
+                            <option value="Bengaluru, KA, India">Bengaluru, KA, India</option>
+                            <option value="Berlin, BE, Germany">Berlin, BE, Germany</option>
+                            <option value="Boston, MA">Boston, MA</option>
+                            <option value="Boulder, CO">Boulder, CO</option>
+                            <option value="Cambridge, MA">Cambridge, MA</option>
+                            <option value="Chicago, IL">Chicago, IL</option>
+                            <option value="Cupertino, CA">Cupertino, CA</option>
+                            <option value="Dallas, TX">Dallas, TX</option>
+                            <option value="Denver, CO">Denver, CO</option>
+                            <option value="Dublin, DN, Ireland">Dublin, DN, Ireland</option>
+                            <option value="Hillsboro, OR">Hillsboro, OR</option>
+                            <option value="Houston, TX">Houston, TX</option>
+                            <option value="Hyderabad, TS, India">Hyderabad, TS, India</option>
+                            <option value="Irvine, CA">Irvine, CA</option>
+                            <option value="London, EN, United Kingdom">London, EN, United Kingdom</option>
+                            <option value="Los Angeles, CA">Los Angeles, CA</option>
+                            <option value="Los Gatos, CA">Los Gatos, CA</option>
+                            <option value="Menlo Park, CA">Menlo Park, CA</option>
+                            <option value="Minneapolis, MN">Minneapolis, MN</option>
+                            <option value="Moscow, MC, Russia">Moscow, MC, Russia</option>
+                            <option value="Mountain View, CA">Mountain View, CA</option>
+                            <option value="New York, NY">New York, NY</option>
+                            <option value="Palo Alto, CA">Palo Alto, CA</option>
+                            <option value="Philadelphia, PA">Philadelphia, PA</option>
+                            <option value="Pittsburgh, PA">Pittsburgh, PA</option>
+                            <option value="Plano, TX">Plano, TX</option>
+                            <option value="Pleasanton, CA">Pleasanton, CA</option>
+                            <option value="Portland, OR">Portland, OR</option>
+                            <option value="Raleigh, NC">Raleigh, NC</option>
+                            <option value="Redmond, WA">Redmond, WA</option>
+                            <option value="Redwood City, CA">Redwood City, CA</option>
+                            <option value="San Diego, CA">San Diego, CA</option>
+                            <option value="San Francisco, CA">San Francisco, CA</option>
+                            <option value="San Jose, CA">San Jose, CA</option>
+                            <option value="Santa Clara, CA">Santa Clara, CA</option>
+                            <option value="Seattle, WA">Seattle, WA</option>
+                            <option value="Singapore, SG, Singapore">Singapore, SG, Singapore</option>
+                            <option value="Sunnyvale, CA">Sunnyvale, CA</option>
+                            <option value="Sydney, NS, Australia">Sydney, NS, Australia</option>
+                            <option value="Taipei, TP, Taiwan">Taipei, TP, Taiwan</option>
+                            <option value="Toronto, ON, Canada">Toronto, ON, Canada</option>
+                            <option value="Vancouver, BC, Canada">Vancouver, BC, Canada</option>
+                            <option value="Washington, DC">Washington, DC</option>
+                            <option value="Zurich, ZH, Switzerland">Zurich, ZH, Switzerland</option>
+                            <option value="Other">Other</option>
+                        </select>
+                        <br>
+                            
+            
+                                <br>
+                                <!----Kelsey check is this button if needed (just in case)-->
+                                <!----Xiaolin thanks for the heads up! I deleted the duplicate button-->
+                                <button type="submit">Predict</button>
+                                <br>
+                                {% if prediction_output%}
+                                <h3>Prediction:{{ prediction_output}}</h3>
+                                {% endif %}
+                                <!-- https://www.w3schools.com/tags/att_input_type_number.asp-->
                     </form>
                 </div>
             </section>
             <!-- Prediction with drop down list end -->     
-<!-- 
+            <!----->
+
             <!-- Result -->
             <section class="model-result" id="result">
                 <h2 class="heading"><center>Our Result</center></h2>
@@ -376,30 +376,8 @@
                         <h1>81.3%</h1>   
                     </div>
                 </div>
-            </section> -->
+            </section>
             
-            <!-- Test -->
-            <!-- <section class="test" id="test">
-                <h2 class="heading"><center>Test</center></h2>
-
-                <div class="test-container">
-                    <div class="test-box">
-                        <h3>Features</h3>
-                        <span class="material-icons-outlined text-blue">man</span> Male
-                        <span class="material-icons-outlined text-blue">apartment</span> Amazon
-                        <span class="material-icons-outlined text-blue">calendar_month</span> 2018
-                        <span class="material-icons-outlined text-blue">event</span> March
-                        <span class="material-icons-outlined text-blue">badge</span> Software Engineer
-                        <span class="material-icons-outlined text-blue">location_on</span> Seattle
-                    </div>
-
-                    <div class="test-box">
-                        <h3>Prediction:</h3>
-                        <span class="material-icons-outlined text-blue">attach_money</span> 2196769(need change)  
-                    </div>
-                </div>
-            </section> -->
-
             <!-- Model with layoff -->
             <!-- Model2 home -->
             <section class="model-layoff" id="model-layoff">
