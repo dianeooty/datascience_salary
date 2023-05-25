@@ -67,6 +67,19 @@ MongoDB Compass
 
 ![2](https://github.com/dianeooty/datascience_salary/assets/117790100/d86f91d7-f1d5-46f9-9fba-a8b5bcf4744f)
 
+Statistical Analysis
+Gender
+<img width="739" alt="image" src="https://github.com/dianeooty/datascience_salary/assets/118244319/76519536-d64f-436d-b2b5-8bd21acb42f2">
+<img width="616" alt="image" src="https://github.com/dianeooty/datascience_salary/assets/118244319/18dffdee-46df-40de-96f6-c54f2d3067ed">
+
+Race
+<img width="732" alt="image" src="https://github.com/dianeooty/datascience_salary/assets/118244319/486f96aa-8391-429d-824e-cbd7472e13af">
+<img width="669" alt="image" src="https://github.com/dianeooty/datascience_salary/assets/118244319/02e798ec-c4ee-4b1b-b8a5-1eb41423ab50">
+
+Education 
+<img width="664" alt="image" src="https://github.com/dianeooty/datascience_salary/assets/118244319/2df337e8-2a75-4a3a-93d9-3e272fa08212">
+<img width="681" alt="image" src="https://github.com/dianeooty/datascience_salary/assets/118244319/d6e368df-5177-4934-a528-de2b36c676b4">
+
 ## Setup
 - Data Cleanup: All original data files can be found in the Resources folder.  The notebook titled data_cleanup.ipynb contains all the codes for data cleaning and preparation for database upload.
 - Data Exploration: The notebook titled Project4-Visualizations.ipynb ingests the clean data and does a variety of exploratory views of the salary and layoff dataset. There are cooresponding visualizations for the different views and datasets.
