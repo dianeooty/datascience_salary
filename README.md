@@ -1,25 +1,22 @@
-# Predicting Our Future: 
-## A Deep Dive into Salary and Layoff Data
+# Predicting Our Future: A Deep Dive into Salary and Layoff Data
 We used 2 datasets to analyze salary and layoff trends, create data visualizations to reflect the findings and build machine learning models for salary and layoff predictions. 
 
 
 ## Table of Contents
-* [General Info](#general-information)
+* [Project Status](#project-status)
 * [Technologies Used](#technologies-used)
 * [Features](#features)
 * [Screenshots](#screenshots)
 * [Setup](#setup)
-* [Usage](#usage)
 * [Project Status](#project-status)
 * [Room for Improvement](#room-for-improvement)
+* [Project Submission Files](#project-submission-files)
 * [Acknowledgements](#acknowledgements)
 * [Contact](#contact)
 <!-- * [License](#license) -->
 
-
-## General Information
-- 
-
+## Project Status
+Project is complete
 
 ## Technologies Used
 - Jupyter Notebook
@@ -37,17 +34,15 @@ We used 2 datasets to analyze salary and layoff trends, create data visualizatio
 - MongoDB
 - Seaborn
 
-
-
 ## Features
 List the ready features here:
+- Cleaned and ready to use Salary and Layoff datasets
+- Jupyter Notebooks housing a variety of data visualizations that can easily be exported
+- HTML/CSS site that has interactive visuzalizations and is integrated with Tableau interactive maps
 - Interactive Salary Predictor
-- YoY Salary by Title bar chart 
-- Map that shows the locations and total layoffs by year
-
 
 ## Screenshots
-Top 20 Highest Paying Companies (Mean Average)
+Top 20 Highest Paying Companies (based on Company's Average Salary)
 ![2](https://github.com/dianeooty/datascience_salary/assets/117790100/57494e5c-59e1-4bb8-9cc2-8aa5c0cff12d)
 
 Average Salary by Title YoY
@@ -65,26 +60,17 @@ Layoff Trends
 - Statistical Analysis: The notebook titled datasciencesalaries_corr_update2.ipynb contains all the statistical analysis on the salaries dataset.
 - Machine Learning:
 
-
-
-## Usage
-
-
-
-## Project Status
-Project is in progress.
-
-
 ## Room for Improvement
 
 Room for improvement:
-- Salaries dataset used in project contain years 2018-2021 and layoffs dataset contain years 2020-2023. Retrieve updated salary and layoff data at https://www.levels.fyi/ and https://layoffs.fyi/ using Web Scraping and ETL.
-- Create an Interactive Layoff Predictor on the HTML.
-- 
+- Salaries dataset used in project contain years 2017-2021 and layoffs dataset contain years 2020-2023. Retrieve updated salary and layoff data at https://www.levels.fyi/ and https://layoffs.fyi/ using Web Scraping and ETL.
+- Create an Interactive Layoff Predictor on the HTML
+
+## Project Submission Files
 
 
 ## Acknowledgements
-- Many thanks to our instructional team.
+- Many thanks to our instructional team
 - Referenced for tutorial making a hat graph: https://matplotlib.org/stable/gallery/lines_bars_and_markers/hat_graph.html
 
 ## Resources
