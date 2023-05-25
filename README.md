@@ -26,6 +26,8 @@ Project is complete
 - Tableau
 - Matplotlib
 - RandomForest Regressor
+- RandomForest Classifier
+- RandomForest MultiOutput Regressor
 - Pandas
 - Sklearn
 - Postgresql
