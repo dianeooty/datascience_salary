@@ -12,7 +12,7 @@ We used 2 datasets to analyze salary and layoff trends, create data visualizatio
 * [Room for Improvement](#room-for-improvement)
 * [Project Submission Files](#project-submission-files)
 * [Acknowledgements and Resources](#acknowledgements-and-resources)
-* [Contact](#contact)
+* [Group](#group)
 <!-- * [License](#license) -->
 
 ## Project Status
@@ -88,7 +88,7 @@ Room for improvement:
 - Reference: https://layoffs.fyi/
 - Reference: https://www.levels.fyi/
 
-## Contact
+## Group
 Created by Diane Guzman, Kelsey Brantner, Jiamin Li, Laura Jordan and Xiaolin Ruan
 
 <!-- ## License -->
