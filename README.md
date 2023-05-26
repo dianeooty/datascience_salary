@@ -1,10 +1,23 @@
 # Predicting Our Future: A Deep Dive into Salary and Layoff Data
-The world of data science is evolving so fast and data science was named the fastest-growing job in 2017 by LinkedIn. A recent study by PriceWaterCoopers said, 'the best jobs right now in America include titles like data scientist, data engineer, and business analyst." As a result of this growing trend, our team will be analyzing the salaries 
+The world of data science is evolving so fast and data science was named 
+the fastest-growing job in 2017 by LinkedIn. A recent study by 
+PriceWaterhouseCoopers said, “the best jobs right now in America include 
+titles like data scientist, data engineer, and business analyst.” As a 
+result of this growing trend, our team will be analyzing the salaries of 
+the data science profession based on years of experience, type of work 
+you’re open to, your location and the size of the company you’re joining.
+Additionally, our team will be analyzing layoff trends to have a more 
+comprehensive view of the current job market. 
+In order to achieve these goals, our team will use the salaries and 
+layoffs dataset to analyze trends, create data visualizations to reflect 
+the findings and build machine learning models for salary and layoff 
+predictions.  
 
 ## Table of Contents
 * [Project Status](#project-status)
 * [Technologies Used](#technologies-used)
 * [Features](#features)
+* [General Information](#general-information)
 * [Screenshots](#screenshots)
 * [Setup](#setup)
 * [Project Status](#project-status)
@@ -40,6 +53,23 @@ List the ready features here:
 - Jupyter Notebooks housing a variety of data visualizations that can easily be exported
 - HTML/CSS site that has interactive visuzalizations and is integrated with Tableau interactive maps
 - Interactive Salary Predictor
+
+## General Information
+This project uses a variety of files and technologies to accomplish the 
+goals stated in the introduction. To see the main result of the team’s 
+work, we recommend running the file “app3.py” which uses Flask. This will
+show interactive visualizations of the results, the accuracy of the 
+salary and layoff machine learning models. Additionally, the Flask 
+application includes an interactive form where the user can submit 
+different inputs and the machine learning model will predict the annual 
+total income. For “app3.py” to work correctly, the file structure will 
+need to stay as currently seen in GitHub. For more static visualizations 
+please see the “Screenshots” section below, where the results of the 
+statistical analysis can be found along with additional information the 
+team would like to highlight. 
+To view the progress history of how the machine learning models were 
+built, we recommend referencing the folder titled “ml_archived_files” in 
+Kelsey’s branch.
 
 ## Screenshots
 Top 20 Highest Paying Companies (based on Company's Average Salary)
@@ -82,11 +112,34 @@ Education <br>
 <img width="681" alt="image" src="https://github.com/dianeooty/datascience_salary/assets/118244319/d6e368df-5177-4934-a528-de2b36c676b4">
 
 ## Setup
-- Data Cleanup: All original data files can be found in the Resources folder.  The notebook titled data_cleanup.ipynb contains all the codes for data cleaning and preparation for database upload.
-- Data Exploration: The notebook titled Project4-Visualizations.ipynb ingests the clean data and does a variety of exploratory views of the salary and layoff dataset. There are cooresponding visualizations for the different views and datasets.
-- Statistical Analysis: The notebook titled datasciencesalaries_corr_update2.ipynb contains all the statistical analysis on the salaries dataset.
-- Machine Learning:
-- Databases: Cleaned datasets imported to Postgresql with using file titled schems.sql.  Also imported to MongoDB when running codes in data_cleanup.ipynb.
+- Data Cleanup: All original data files can be found in the Resources 
+folder.  The notebook titled data_cleanup.ipynb contains all the codes 
+for data cleaning and preparation for database upload.
+- Data Exploration: The notebook titled Project4-Visualizations.ipynb 
+ingests the clean data and does a variety of exploratory views of the 
+salary and layoff dataset. There are cooresponding visualizations for the
+different views and datasets.
+- Statistical Analysis: The notebook titled 
+datasciencesalaries_corr_update2.ipynb contains all the statistical 
+analysis on the salaries dataset.
+- Machine Learning: 
+  * The notebook titled “salary_ml_RFRegressor_final.ipynb” contains the
+code to create the final machine learning model (sklearn 
+RandomForestRegressor) for salary prediction and it exports the 
+files needed for another notebook to run predictions based on the 
+model.
+  * The notebook titled “salary_ml_RFRegressor_prediction.ipynb” 
+contains the code to make salary predictions based on importing the 
+relevant salary machine learning files.
+  * The notebook titled “layoff_ml_RFClassifier_final.ipynb” contains 
+the code to create the final machine learning model (sklearn 
+RandomForestClassifier) for predicting whether or not a layoff is 
+anticipated. 
+- Interactive Data Visualizations:
+  * The interactive data visualizations are run through Flask, in the 
+file titled “app3.py”. The relevant html (index.html), css 
+(styles.css), and js (scripts.js) files can be found in the 
+“Templates” and “Static” folders
 
 ## Room for Improvement
 
@@ -118,6 +171,20 @@ Room for improvement:
 - Reference: https://layoffs.fyi/
 - Reference: https://www.levels.fyi/
 - Reference for Seaborn graph: https://seaborn.pydata.org/
+- Referenced the following site to learn how to capture user input, process it, and then display an output:
+  * https://www.youtube.com/watch?v=0meTbQQaosU
+  * https://www.youtube.com/watch?v=i3RMlrx4ol4
+-Referenced to learn about hyperarameters in ML: 
+  * https://towardsdatascience.com/hyperparameter-tuning-the-random-forest-in-python-using-scikit-learn-28d2aa77dd74
+  * https://www.youtube.com/watch?v=SctFnD_puQI
+- Referenced to learn about TensorFlow ML (final models do not use this information): https://www.tensorflow.org/decision_forests/api_docs/python/tfdf/keras/RandomForestModel
+- Reference to learn about GridSearchCV (the final models do not use this): https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.GridSearchCV.html
+- Referenced to learn about RandomForestRegressor: 
+  * https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.RandomForestRegressor.html
+  * https://scikit-learn.org/0.16/modules/generated/sklearn.ensemble.RandomForestRegressor.html
+  * https://stackoverflow.com/questions/52648383/how-to-get-coefficients-and-feature-importances-from-multioutputregressor
+- Referenced for how to learn how to export and import ml models: https://scikit-learn.org/stable/model_persistence.html
+- Referenced for how to save user inputs: https://stackoverflow.com/questions/17433557/how-to-save-user-input-into-a-variable-in-html-and-javascript
 
 ## Group
 Created by Diane Guzman, Kelsey Brantner, Jiamin Li, Laura Jordan and Xiaolin Ruan
