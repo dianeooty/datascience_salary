@@ -40,12 +40,14 @@ Project is complete
 - Matplotlib
 - RandomForest Regressor
 - RandomForest Classifier
-- RandomForest MultiOutput Regressor
 - Pandas
 - Sklearn
 - Postgresql
 - MongoDB
 - Seaborn
+- Pickle
+- Flask
+- API
 
 ## Features
 List the ready features here:
@@ -154,13 +156,12 @@ Room for improvement:
 * Entity Relationship Diagram: ERD.png
 * Notebook with Visualizations: Project4-Visualizations.ipynb
 * Notebook with Statistical Analysis: datasciencesalaries_corr_update2.ipynb
-* Machine Learning Notebook: ENTER FILE NAME HERE
+* Machine Learning Notebook: salary_ml_RFRegressor_final.ipynb, layoff_ml_RFClassifier_final.ipynb, salary_ml_RFRegressor_prediction.ipynb
 * Postgresql Database: schemas.sql and ERD.png
 * MongoDB: data_cleanup.ipynb
 
 * Presentation Slide Deck: https://docs.google.com/presentation/d/1LZUQjMwFvXGfSof0LX7Ooy8ZpRVQ30yyCEn8YisLX5w/edit?usp=sharing
-* Presentation HTML/CSS Code: ENTER FILE NAME
-* Presentation Website: ENTER WEB ADDRESS unless still running off Flask
+* Presentation HTML/CSS/Flask/Javascript Code: Use “app3.py”. The relevant html (index.html), css (styles.css), and js (scripts.js) files can be found in the “Templates” and “Static” folders
 
 
 ## Acknowledgements and Resources
