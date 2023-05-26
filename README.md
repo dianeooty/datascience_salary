@@ -1,5 +1,5 @@
 # Predicting Our Future: A Deep Dive into Salary and Layoff Data
-We used 2 datasets to analyze salary and layoff trends, create data visualizations to reflect the findings and build machine learning models for salary and layoff predictions. 
+The world of data science is evolving so fast and data science was named the fastest-growing job in 2017 by LinkedIn. A recent study by PriceWaterCoopers said, 'the best jobs right now in America include titles like data scientist, data engineer, and business analyst." As a result of this growing trend, our team will be analyzing the salaries 
 
 ## Table of Contents
 * [Project Status](#project-status)
