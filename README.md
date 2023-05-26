@@ -185,6 +185,7 @@ Room for improvement:
   * https://stackoverflow.com/questions/52648383/how-to-get-coefficients-and-feature-importances-from-multioutputregressor
 - Referenced for how to learn how to export and import ml models: https://scikit-learn.org/stable/model_persistence.html
 - Referenced for how to save user inputs: https://stackoverflow.com/questions/17433557/how-to-save-user-input-into-a-variable-in-html-and-javascript
+- Image: https://mljar.com/images/machine-learning/random_forest_logo.png
 
 ## Group
 Created by Diane Guzman, Kelsey Brantner, Jiamin Li, Laura Jordan and Xiaolin Ruan
