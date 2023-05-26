@@ -102,8 +102,8 @@ def resutls():
             blank_dummies_df['company_PayPal'] = 1
         elif x=='Qualcomm':
             blank_dummies_df['company_Qualcomm'] = 1
-        elif x=='Salesforce':
-            blank_dummies_df['company_Salesforce'] = 1
+        elif x=='SalesForce':
+            blank_dummies_df['company_SalesForce'] = 1
         elif x=='Uber':
             blank_dummies_df['company_Uber'] = 1
         elif x=='VMware':
