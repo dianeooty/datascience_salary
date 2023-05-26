@@ -117,7 +117,9 @@ Salary Machine Learning Final Result
 ![image](https://github.com/dianeooty/datascience_salary/assets/117327499/dac82d39-557b-4e25-820e-9e2d6af91ba1)
 
 
+
 Layoff Machine Learning Model Results
+
 ![image](https://github.com/dianeooty/datascience_salary/assets/117327499/018edd7d-d677-4aef-bb9d-4360cf6d63f5)
 
 
@@ -183,20 +185,6 @@ Room for improvement:
 - Referenced the following site to learn how to capture user input, process it, and then display an output:
   * https://www.youtube.com/watch?v=0meTbQQaosU
   * https://www.youtube.com/watch?v=i3RMlrx4ol4
-- Referenced to learn about hyperarameters in ML: 
-  * https://towardsdatascience.com/hyperparameter-tuning-the-random-forest-in-python-using-scikit-learn-28d2aa77dd74
-  * https://www.youtube.com/watch?v=SctFnD_puQI
-- Referenced to learn about TensorFlow ML (final models do not use this information):         
-  * https://www.tensorflow.org/decision_forests/api_docs/python/tfdf/keras/RandomForestModel
-- Reference to learn about GridSearchCV (the final models do not use this): 
-  * https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.GridSearchCV.html
-- Referenced to learn about RandomForestRegressor: 
-  * https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.RandomForestRegressor.html
-  * https://scikit-learn.org/0.16/modules/generated/sklearn.ensemble.RandomForestRegressor.html
-  * https://stackoverflow.com/questions/52648383/how-to-get-coefficients-and-feature-importances-from-multioutputregressor
-- Referenced for how to learn how to export and import ml models: https://scikit-learn.org/stable/model_persistence.html
-- Referenced for how to save user inputs: 
-  * https://stackoverflow.com/questions/17433557/how-to-save-user-input-into-a-variable-in-html-and-javascript
 - Image: https://mljar.com/images/machine-learning/random_forest_logo.png
 - Referenced the following site to learn how to create the webpage:
   * https://www.youtube.com/watch?v=UALn3klXFBM
