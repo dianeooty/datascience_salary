@@ -158,7 +158,7 @@ Room for improvement:
 * Postgresql Database: schemas.sql and ERD.png
 * MongoDB: data_cleanup.ipynb
 
-* Presentation Slide Deck: (https://docs.google.com/presentation/d/1LZUQjMwFvXGfSof0LX7Ooy8ZpRVQ30yyCEn8YisLX5w/edit?usp=sharing)
+* Presentation Slide Deck: https://docs.google.com/presentation/d/1LZUQjMwFvXGfSof0LX7Ooy8ZpRVQ30yyCEn8YisLX5w/edit?usp=sharing
 * Presentation HTML/CSS Code: ENTER FILE NAME
 * Presentation Website: ENTER WEB ADDRESS unless still running off Flask
 
