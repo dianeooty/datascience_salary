@@ -201,27 +201,28 @@ Room for improvement:
 - Referenced for apexcharts.js: https://apexcharts.com/javascript-chart-demos/
 - Referenced for Chart.js: https://www.chartjs.org/docs/latest/
 - Referenced for material symbols: https://fonts.google.com/icons
+- Referenced for Montserrat font: https://fonts.google.com/specimen/Montserrat?query=Montserrat
 - Referenced the following site to learn how to capture user input, process it, and then display an output:
-https://www.youtube.com/watch?v=0meTbQQaosU
-https://www.youtube.com/watch?v=i3RMlrx4ol4
+  * https://www.youtube.com/watch?v=0meTbQQaosU
+  * https://www.youtube.com/watch?v=i3RMlrx4ol4
 - Referenced to learn about hyperarameters in ML:
-https://towardsdatascience.com/hyperparameter-tuning-the-random-forest-in-python-using-scikit-learn-28d2aa77dd74
-https://www.youtube.com/watch?v=SctFnD_puQI 
+  * https://towardsdatascience.com/hyperparameter-tuning-the-random-forest-in-python-using-scikit-learn-28d2aa77dd74
+  * https://www.youtube.com/watch?v=SctFnD_puQI 
 - Referenced to learn about TensorFlow ML (final models do not use this information):
 https://www.tensorflow.org/decision_forests/api_docs/python/tfdf/keras/RandomForestModel
 - Reference to learn about GridSearchCV (the final models do not use this):
 https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.GridSearchCV.html
 - Referenced to learn about RandomForestRegressor
-https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.RandomForestRegressor.html
-https://scikit-learn.org/0.16/modules/generated/sklearn.ensemble.RandomForestRegressor.html
-https://stackoverflow.com/questions/52648383/how-to-get-coefficients-and-feature-importances-from-multioutputregressor
+  * https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.RandomForestRegressor.html
+  * https://scikit-learn.org/0.16/modules/generated/sklearn.ensemble.RandomForestRegressor.html
+  * https://stackoverflow.com/questions/52648383/how-to-get-coefficients-and-feature-importances-from-multioutputregressor
 - Referenced for how to learn how to export and import ml models
-https://scikit-learn.org/stable/model_persistence.html
-https://stackoverflow.com/questions/4530611/saving-and-loading-objects-and-using-pickle
+  * https://scikit-learn.org/stable/model_persistence.html
+  * https://stackoverflow.com/questions/4530611/saving-and-loading-objects-and-using-pickle
 - Referenced for how to save user inputs
-https://stackoverflow.com/questions/17433557/how-to-save-user-input-into-a-variable-in-html-and-javascript
-https://stackoverflow.com/questions/19882765/how-do-you-link-an-html-form-to-a-function-in-javascript
-https://stackoverflow.com/questions/20646822/how-to-serve-static-files-in-flask
+  * https://stackoverflow.com/questions/17433557/how-to-save-user-input-into-a-variable-in-html-and-javascript
+  * https://stackoverflow.com/questions/19882765/how-do-you-link-an-html-form-to-a-function-in-javascript
+  * https://stackoverflow.com/questions/20646822/how-to-serve-static-files-in-flask
 - Referenced for how to created cascading dropdowns (determined not to use in the final code since we decided we didn’t input to ml model to be linked)
 https://www.w3schools.com/howto/howto_js_cascading_dropdown.asp
 - Referenced to learn how to save large files to GitHub
