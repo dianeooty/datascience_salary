@@ -195,7 +195,10 @@ Room for improvement:
 - Referenced for how to learn how to export and import ml models: https://scikit-learn.org/stable/model_persistence.html
 - Referenced for how to save user inputs: https://stackoverflow.com/questions/17433557/how-to-save-user-input-into-a-variable-in-html-and-javascript
 - Image: https://mljar.com/images/machine-learning/random_forest_logo.png
-- -Referenced the following site to learn how to capture user input, process it, and then display an output:
+- Referenced the following site to learn how to create the webpage:
+  * https://www.youtube.com/watch?v=UALn3klXFBM
+  * https://www.youtube.com/watch?v=Tkp3FDgOueM&t=4027s
+- Referenced the following site to learn how to capture user input, process it, and then display an output:
 https://www.youtube.com/watch?v=0meTbQQaosU
 https://www.youtube.com/watch?v=i3RMlrx4ol4
 -Referenced to learn about hyperarameters in ML:
