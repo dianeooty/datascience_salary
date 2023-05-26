@@ -189,6 +189,7 @@ Room for improvement:
 - Referenced the following site to learn how to create the webpage:
   * https://www.youtube.com/watch?v=UALn3klXFBM
   * https://www.youtube.com/watch?v=Tkp3FDgOueM&t=4027s
+  * https://www.youtube.com/watch?v=vDSR1YJ1KEY&t=55s
 - Referenced for apexcharts: https://apexcharts.com/javascript-chart-demos/
 - Referenced for Chart.js: https://www.chartjs.org/docs/latest/
 - Referenced for material symbols: https://fonts.google.com/icons
