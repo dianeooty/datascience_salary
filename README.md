@@ -183,7 +183,7 @@ Room for improvement:
 - Referenced the following site to learn how to capture user input, process it, and then display an output:
   * https://www.youtube.com/watch?v=0meTbQQaosU
   * https://www.youtube.com/watch?v=i3RMlrx4ol4
--Referenced to learn about hyperarameters in ML: 
+- Referenced to learn about hyperarameters in ML: 
   * https://towardsdatascience.com/hyperparameter-tuning-the-random-forest-in-python-using-scikit-learn-28d2aa77dd74
   * https://www.youtube.com/watch?v=SctFnD_puQI
 - Referenced to learn about TensorFlow ML (final models do not use this information): https://www.tensorflow.org/decision_forests/api_docs/python/tfdf/keras/RandomForestModel
