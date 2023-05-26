@@ -113,6 +113,14 @@ Education <br>
 <img width="664" alt="image" src="https://github.com/dianeooty/datascience_salary/assets/118244319/2df337e8-2a75-4a3a-93d9-3e272fa08212">
 <img width="681" alt="image" src="https://github.com/dianeooty/datascience_salary/assets/118244319/d6e368df-5177-4934-a528-de2b36c676b4">
 
+Salary Machine Learning Final Result
+![image](https://github.com/dianeooty/datascience_salary/assets/117327499/dac82d39-557b-4e25-820e-9e2d6af91ba1)
+
+
+Layoff Machine Learning Model Results
+![image](https://github.com/dianeooty/datascience_salary/assets/117327499/018edd7d-d677-4aef-bb9d-4360cf6d63f5)
+
+
 ## Setup
 - Data Cleanup: All original data files can be found in the Resources 
 folder.  The notebook titled data_cleanup.ipynb contains all the codes 
