@@ -198,6 +198,8 @@ Room for improvement:
 - Referenced the following site to learn how to create the webpage:
   * https://www.youtube.com/watch?v=UALn3klXFBM
   * https://www.youtube.com/watch?v=Tkp3FDgOueM&t=4027s
+- Referenced for apexcharts.js: https://apexcharts.com/javascript-chart-demos/
+- Referenced for Chart.js: https://www.chartjs.org/docs/latest/
 - Referenced the following site to learn how to capture user input, process it, and then display an output:
 https://www.youtube.com/watch?v=0meTbQQaosU
 https://www.youtube.com/watch?v=i3RMlrx4ol4
